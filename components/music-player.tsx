@@ -26,7 +26,7 @@ const tracks: AudioTrack[] = [
     icon: SpotifyIcon,
     accentClass: "text-emerald-500 hover:text-emerald-600 border-emerald-500/20 bg-emerald-500/5",
     themeColor: "#1db954",
-    tagline: "Stream original indie-folk acoustic on Spotify",
+    tagline: "Stream my original indie-folk ambient music on Spotify",
   },
   {
     id: "youtube",
@@ -37,7 +37,7 @@ const tracks: AudioTrack[] = [
     icon: YoutubeIcon,
     accentClass: "text-red-500 hover:text-red-600 border-red-500/20 bg-red-500/5",
     themeColor: "#ff0000",
-    tagline: "Watch acoustic live streams & recordings on YouTube",
+    tagline: "Watch live streams & recordings on YouTube",
   },
   {
     id: "apple",
@@ -89,7 +89,7 @@ export default function MusicPlayer() {
             <div className="flex items-center gap-2 mb-3">
               <span className="h-px w-8 bg-zinc-400 dark:bg-zinc-700"></span>
               <span className="text-xs font-mono font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
-                Acoustic Waves
+                Indie Music
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
@@ -110,11 +110,10 @@ export default function MusicPlayer() {
                   onClick={() => {
                     setActiveTrack(track);
                   }}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold font-mono tracking-tight transition-all flex items-center gap-1.5 cursor-pointer ${
-                    isActive
-                      ? "bg-white dark:bg-zinc-800 text-zinc-950 dark:text-zinc-50 shadow-xs border border-zinc-200/20"
-                      : "text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100"
-                  }`}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold font-mono tracking-tight transition-all flex items-center gap-1.5 cursor-pointer ${isActive
+                    ? "bg-white dark:bg-zinc-800 text-zinc-950 dark:text-zinc-50 shadow-xs border border-zinc-200/20"
+                    : "text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100"
+                    }`}
                 >
                   <TrackIcon className="h-3.5 w-3.5" />
                   {track.platform.toUpperCase()}
@@ -126,7 +125,7 @@ export default function MusicPlayer() {
 
         {/* Studio Player Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
-          
+
           {/* Left Column: Active Player Embed (md:col-span-7) */}
           <div className="md:col-span-7 p-6 md:p-8 rounded-3xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white/40 dark:bg-[#0f0f11]/40 backdrop-blur-xs flex flex-col justify-between min-h-[380px] transition-colors duration-600">
             <div className="flex items-center justify-between w-full mb-4">
@@ -137,7 +136,7 @@ export default function MusicPlayer() {
                 Active Stream
               </span>
             </div>
-            
+
             <div className="relative w-full rounded-2xl overflow-hidden bg-black/5 dark:bg-black/40 border border-zinc-200/20 flex-1 flex items-center justify-center min-h-[280px]">
               <iframe
                 src={activeTrack.embedUrl}
@@ -160,13 +159,13 @@ export default function MusicPlayer() {
                   Artist Profile
                 </span>
               </div>
-              
+
               <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-50 leading-tight mb-3">
                 Published Indie Releases
               </h3>
-              
+
               <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal">
-                Writing heartfelt indie-acoustic tracks and releasing original singles across major global networks. Listen directly on your preferred streaming service.
+                Writing heartfelt indie-ambient tracks and releasing original singles across major global networks. Listen directly on your preferred streaming service.
               </p>
             </div>
 
@@ -174,7 +173,7 @@ export default function MusicPlayer() {
               <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 block">
                 Direct Platform Streaming
               </span>
-              
+
               <div className="flex flex-col gap-2.5">
                 {directLinks.map((link) => {
                   const LinkIcon = link.icon;

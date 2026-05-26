@@ -60,8 +60,8 @@ const items: BentoItem[] = [
   },
   {
     id: "music-performance",
-    title: "Acoustic Live Sprints",
-    category: "Acoustic Session",
+    title: "Live Music Sprints",
+    category: "Guitar Session",
     description: "Composing organic harmonies and performing guitar/vocal live sets, bridging creative logic with real-time crowd energy.",
     quote: "A live session is code running in production.",
     imageUrl: "/images/music-performance.jpg",
@@ -98,7 +98,7 @@ export default function HumanSide() {
       {/* Ambient colorful background auras */}
       <div className="absolute top-1/3 right-[10%] w-[500px] h-[500px] rounded-full bg-cyan-500/12 dark:bg-cyan-500/8 blur-[120px] pointer-events-none -z-10"></div>
       <div className="absolute bottom-1/3 left-[10%] w-[450px] h-[450px] rounded-full bg-amber-500/10 dark:bg-amber-500/6 blur-[120px] pointer-events-none -z-10"></div>
-      
+
       <div className="max-w-6xl mx-auto">
         {/* Unified Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
@@ -158,7 +158,7 @@ export default function HumanSide() {
                   <h3 className="text-xl md:text-2xl font-bold text-white tracking-tight mb-2">
                     {skydivingItem.title}
                   </h3>
-                  
+
                   {/* Collapsible details on hover */}
                   <p className="text-xs md:text-sm text-zinc-300 leading-relaxed font-normal max-w-md transition-all duration-550 opacity-0 h-0 overflow-hidden group-hover:opacity-100 group-hover:h-auto group-hover:mt-2.5">
                     {skydivingItem.description}
@@ -214,7 +214,7 @@ export default function HumanSide() {
                     <h3 className="text-xl md:text-2xl font-bold text-white tracking-tight mb-2">
                       {item.title}
                     </h3>
-                    
+
                     {/* Collapsible details on hover or desktop visibility */}
                     <p className="text-xs md:text-sm text-zinc-300 leading-relaxed font-normal max-w-md transition-all duration-550 opacity-0 h-0 overflow-hidden group-hover:opacity-100 group-hover:h-auto group-hover:mt-2.5">
                       {item.description}

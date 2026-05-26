@@ -93,7 +93,7 @@ const personas: Persona[] = [
     stats: [
       { label: "Independent Single", value: "1" },
       { label: "Streaming Platforms", value: "All Major" },
-      { label: "Acoustic Instruments", value: "Guitar & Keys" },
+      { label: "Musical Instruments", value: "Guitar & Vocals" },
     ],
   },
   {
@@ -159,9 +159,9 @@ export default function Hero({ onContactClick }: { onContactClick: () => void })
 
       {/* Main Container wrapping the Left-Aligned Split Dashboard inside a Card */}
       <div className="max-w-6xl mx-auto w-full relative z-10">
-        
+
         {/* The Outer Hero Card System with Vibrant Ambient Accents */}
-        <div 
+        <div
           className="w-full glass-panel p-6 sm:p-8 lg:p-12 rounded-[2.5rem] bg-white/60 dark:bg-[#0c0c0e]/40 backdrop-blur-xl border border-zinc-200/50 dark:border-zinc-800/80 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative overflow-hidden lg:h-[680px]"
           style={{
             boxShadow: `0 30px 70px -20px rgba(0, 0, 0, 0.12), 0 0 100px -10px ${getPersonaColor()}1a`,
@@ -169,7 +169,7 @@ export default function Hero({ onContactClick }: { onContactClick: () => void })
           }}
         >
           {/* Internal card dynamic glow */}
-          <div 
+          <div
             className="absolute -top-40 -right-40 w-96 h-96 rounded-full blur-[100px] pointer-events-none opacity-45 dark:opacity-30 transition-all duration-700"
             style={{
               background: `radial-gradient(circle, ${activePersona.glowColor} 0%, transparent 70%)`
@@ -177,8 +177,8 @@ export default function Hero({ onContactClick }: { onContactClick: () => void })
           ></div>
 
           {/* Left Column: Left-Aligned Portfolio Content (7/12 width) */}
-          <div className="lg:col-span-7 flex flex-col items-start text-left relative z-10 w-full">
-            
+          <div className="lg:col-span-7 flex flex-col items-start text-left relative z-10 w-full order-2 lg:order-1">
+
             {/* Status / Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-zinc-200/80 dark:border-zinc-800/80 bg-white/50 dark:bg-zinc-900/50 backdrop-blur-sm text-xs font-mono text-zinc-600 dark:text-zinc-400 mb-6 shadow-xs">
               <Sparkles className="h-3.5 w-3.5 animate-pulse" style={{ color: getPersonaColor() }} />
@@ -194,11 +194,10 @@ export default function Hero({ onContactClick }: { onContactClick: () => void })
                   <button
                     key={persona.id}
                     onClick={() => setActivePersona(persona)}
-                    className={`flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-semibold border transition-all duration-300 cursor-pointer ${
-                      isActive
-                        ? `${persona.accentClass} shadow-xs scale-105 border-current font-bold`
-                        : "bg-white/30 dark:bg-zinc-900/20 border-zinc-200 dark:border-zinc-800/80 text-zinc-500 dark:text-zinc-400 hover:bg-white/80 dark:hover:bg-zinc-900/80 hover:text-zinc-900 dark:hover:text-zinc-50"
-                    }`}
+                    className={`flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-semibold border transition-all duration-300 cursor-pointer ${isActive
+                      ? `${persona.accentClass} shadow-xs scale-105 border-current font-bold`
+                      : "bg-white/30 dark:bg-zinc-900/20 border-zinc-200 dark:border-zinc-800/80 text-zinc-500 dark:text-zinc-400 hover:bg-white/80 dark:hover:bg-zinc-900/80 hover:text-zinc-900 dark:hover:text-zinc-50"
+                      }`}
                   >
                     <Icon className="h-3.5 w-3.5" />
                     {persona.name}
@@ -208,7 +207,7 @@ export default function Hero({ onContactClick }: { onContactClick: () => void })
             </div>
 
             {/* Main Headline Block */}
-             <div className="min-h-[200px] sm:min-h-[180px] lg:h-[220px] flex items-start justify-start w-full mb-6">
+            <div className="min-h-[200px] sm:min-h-[180px] lg:h-[220px] flex items-start justify-start w-full mb-6">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activePersona.id}
@@ -221,7 +220,7 @@ export default function Hero({ onContactClick }: { onContactClick: () => void })
                   <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-zinc-900 dark:text-zinc-50 leading-[1.08]">
                     Atharv Sinha
                   </h1>
-                  <h2 
+                  <h2
                     className="text-lg sm:text-xl font-mono font-bold mt-2.5 transition-colors duration-500"
                     style={{ color: getPersonaColor() }}
                   >
@@ -264,7 +263,7 @@ export default function Hero({ onContactClick }: { onContactClick: () => void })
                       }}
                       className="flex flex-col items-start px-1"
                     >
-                      <span 
+                      <span
                         className="text-xl sm:text-2xl md:text-3xl font-mono font-black tracking-tight leading-none transition-colors duration-500"
                         style={{ color: getPersonaColor() }}
                       >
@@ -365,9 +364,9 @@ export default function Hero({ onContactClick }: { onContactClick: () => void })
           </div>
 
           {/* Right Column: Dynamic Stock Portrait Placeholder (5/12 width) */}
-          <div className="w-full lg:col-span-5 aspect-[4/5] max-w-[320px] md:max-w-[380px] lg:max-w-none relative group z-10 mt-4 lg:mt-0 justify-self-center">
+          <div className="w-full lg:col-span-5 aspect-[4/5] max-w-[320px] md:max-w-[380px] lg:max-w-none relative group z-10 lg:mt-0 justify-self-center order-1 lg:order-2 mb-8 lg:mb-0">
             {/* Glow backing matching active persona */}
-            <div 
+            <div
               className="absolute inset-0 rounded-[2rem] blur-2xl opacity-50 group-hover:opacity-75 transition-all duration-[1200ms] pointer-events-none"
               style={{
                 background: `linear-gradient(to bottom right, ${getPersonaColor()}, #06b6d4)`
@@ -375,7 +374,7 @@ export default function Hero({ onContactClick }: { onContactClick: () => void })
             ></div>
 
             {/* Styled Picture Border */}
-            <div 
+            <div
               className="w-full h-full rounded-[2rem] overflow-hidden border bg-zinc-100 dark:bg-zinc-900 shadow-2xl relative transition-all duration-700"
               style={{
                 borderColor: `${getPersonaColor()}33`
@@ -391,14 +390,14 @@ export default function Hero({ onContactClick }: { onContactClick: () => void })
               />
               {/* Cinematic Vignette Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-75 transition-opacity duration-500 pointer-events-none"></div>
-              
+
               {/* Glass Tag Label */}
               <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-zinc-950/60 dark:bg-black/40 backdrop-blur-md border border-white/10 text-white font-mono text-[10px] leading-tight flex items-center justify-between shadow-lg">
                 <div className="flex flex-col">
                   <span className="font-bold text-xs">Atharv Sinha</span>
                   <span className="text-[9px] text-zinc-300 uppercase tracking-widest mt-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">Remote Nomad</span>
                 </div>
-                <span 
+                <span
                   className="h-2 w-2 rounded-full pulse-indicator"
                   style={{ backgroundColor: getPersonaColor() }}
                 ></span>

@@ -72,7 +72,7 @@ const experiences: Experience[] = [
       "Re-engineered a legacy project timeline tool into a fully interactive, highly performant graph-based visualization layout via custom React rendering algorithms, eliminating redundant UI paths and cutting access steps by <strong>50%</strong>.",
       "Integrated the redesigned objectives portal cleanly into Ernest's <strong>Progressive Web App (PWA)</strong> infrastructure.",
       "Optimized Go API endpoints powering the objectives portal to <strong>reduce latency</strong> and improve platform reliability.",
-      "Implemented components within Ernest's <strong>Storybook-driven internal design system</strong>, collaborating asynchronously with engineering teams across US, EU, and APAC zones."
+      "Implemented components within Ernest's <strong>Storybook-driven internal design system</strong>, collaborating asynchronously with engineering, design and QA teams across US, LATAM, Europe, Africa, and APAC zones."
     ],
     skills: ["TypeScript", "React", "React Query", "Golang", "PWA", "Storybook"],
     highlights: [
@@ -85,21 +85,21 @@ const experiences: Experience[] = [
     company: "InsureComp",
     role: "Senior Software Engineer",
     period: "Aug 2023 – Jun 2024",
-    location: "Remote (Full Time)",
+    location: "Bengaluru (Full Time)",
     asyncFriendly: false,
     impactBadges: ["$5,000 Saved", "50-State Calculation Engine", "Context API Migration"],
     achievements: [
-      "Managed remote async collaboration with US-based clients and cross-functional teams.",
-      "Architected modern client-side application state using Functional React and Context API, decoupling layout structures from underlying business logic to completely <strong>eliminate deep prop-drilling patterns</strong> across a highly dynamic 50-state workspace.",
-      "Engineered a decoupled, multi-tenant background calculation engine in Node.js to compute <strong>50+ complex insurance formulas dynamically</strong>, ensuring strict state-by-spec validation compliance before flattening data into editable PDFs.",
+      "Managed collaboration with US-based clients and cross-functional teams.",
+      "Architected modern client-side application state using Functional React and Context API, decoupling layout structures from underlying business logic to completely <strong>eliminate deep prop-drilling patterns</strong> across a highly dynamic backend with complex calculations across 50 US states.",
+      "Engineered a decoupled, multi-tenant background calculation engine in Node.js to compute <strong>50+ complex insurance formulas dynamically</strong>, ensuring strict state-by-spec validation compliance before flattening data into <strong>editable PDFs<strong>.",
       "Migrated the entire engineering codebase from GitLab to GitHub, <strong>saving the company $5,000 USD annually</strong>.",
       "Mentored <strong>3–4 junior engineers</strong> on a complex insurance backend handling multi-state interest calculations.",
-      "Stepped up as technical lead and primary client liaison for requirement scoping, translating non-technical demands from US banking clients into <strong>precise engineering specifications</strong> across multiple concurrent projects."
+      "Served as the core technical liaison in client business calls to convert high-level demands into precise engineering specs and code, <strong> minimizing post-deployment revisions and aligning deliverables exactly with client expectations<strong>."
     ],
     skills: ["TypeScript", "React", "Node.js", "Context API", "AWS Lambda", "Serverless", "Docker"],
     highlights: [
       { icon: Zap, text: "Architected decoupled multi-tenant dynamic interest calculation engine" },
-      { icon: Layers, text: "Migrated GitLab infra to GitHub, reducing cloud billing by $5,005/yr" }
+      { icon: Layers, text: "Migrated GitLab infra to GitHub, reducing cloud billing by $5,000/yr" }
     ]
   },
   {
@@ -206,27 +206,24 @@ export default function Resume() {
               <div key={exp.id} className="relative group">
                 {/* Timeline Line Segment */}
                 <div
-                  className={`absolute -left-[24px] md:-left-[32px] w-px bg-zinc-200 dark:bg-zinc-800 ${
-                    isFirst ? "top-[30px] bottom-0" : isLast ? "top-0 h-[30px]" : "top-0 bottom-0"
-                  }`}
+                  className={`absolute -left-[24px] md:-left-[32px] w-px bg-zinc-200 dark:bg-zinc-800 ${isFirst ? "top-[30px] bottom-0" : isLast ? "top-0 h-[30px]" : "top-0 bottom-0"
+                    }`}
                 />
-                
+
                 {/* Timeline Node dot */}
                 <div
-                  className={`absolute -left-[32px] md:-left-[40px] top-[22px] h-4 w-4 rounded-full border-2 bg-white dark:bg-[#09090b] transition-all duration-300 ${
-                    isExpanded
-                      ? "border-blue-500 dark:border-blue-400 scale-120 ring-4 ring-blue-500/10 dark:ring-blue-400/10"
-                      : "border-zinc-300 dark:border-zinc-700 group-hover:border-zinc-400 dark:group-hover:border-zinc-600"
-                  }`}
+                  className={`absolute -left-[32px] md:-left-[40px] top-[22px] h-4 w-4 rounded-full border-2 bg-white dark:bg-[#09090b] transition-all duration-300 ${isExpanded
+                    ? "border-blue-500 dark:border-blue-400 scale-120 ring-4 ring-blue-500/10 dark:ring-blue-400/10"
+                    : "border-zinc-300 dark:border-zinc-700 group-hover:border-zinc-400 dark:group-hover:border-zinc-600"
+                    }`}
                 ></div>
 
                 {/* Timeline Card */}
                 <div
-                  className={`p-6 rounded-2xl border transition-all duration-300 bg-white/40 dark:bg-[#0f0f11]/30 backdrop-blur-xs ${
-                    isExpanded
-                      ? "border-zinc-300 dark:border-zinc-700 shadow-md"
-                      : "border-zinc-200/60 dark:border-zinc-900/60 hover:border-zinc-300 dark:hover:border-zinc-800"
-                  }`}
+                  className={`p-6 rounded-2xl border transition-all duration-300 bg-white/40 dark:bg-[#0f0f11]/30 backdrop-blur-xs ${isExpanded
+                    ? "border-zinc-300 dark:border-zinc-700 shadow-md"
+                    : "border-zinc-200/60 dark:border-zinc-900/60 hover:border-zinc-300 dark:hover:border-zinc-800"
+                    }`}
                 >
                   {/* Header */}
                   <div
@@ -318,7 +315,7 @@ export default function Resume() {
                             {exp.achievements.map((ach, aIdx) => (
                               <li key={aIdx} className="flex items-start gap-2.5">
                                 <span className="h-1.5 w-1.5 rounded-full bg-blue-500 dark:bg-blue-400 mt-2 flex-shrink-0"></span>
-                                <span 
+                                <span
                                   className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed font-normal"
                                   dangerouslySetInnerHTML={{ __html: ach }}
                                 />

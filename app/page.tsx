@@ -71,7 +71,7 @@ export default function Home() {
   const [isContactOpen, setIsContactOpen] = useState(false);
 
   return (
-    <div className="flex flex-col min-h-screen bg-transparent transition-colors duration-300">
+    <div className="overflow-x-hidden relative flex flex-col min-h-screen bg-transparent transition-colors duration-300">
       {/* Navigation Layer */}
       <Navbar onContactClick={() => setIsContactOpen(true)} />
 
@@ -106,12 +106,12 @@ export default function Home() {
                 Drop a line, inspect the source, or trace the nomadic adventures.
               </p>
             </div>
-            
+
             <div className="flex flex-wrap items-center justify-center gap-3">
               {/* Instagram */}
-              <a 
-                href="https://instagram.com/where.is.atharv" 
-                target="_blank" 
+              <a
+                href="https://instagram.com/where.is.atharv"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/40 text-xs font-mono text-zinc-600 dark:text-zinc-300 hover:text-rose-500 hover:border-rose-500/40 dark:hover:text-rose-400 transition-all duration-300 shadow-xs"
               >
@@ -120,9 +120,9 @@ export default function Home() {
               </a>
 
               {/* GitHub */}
-              <a 
-                href="https://github.com/atharvsinha" 
-                target="_blank" 
+              <a
+                href="https://github.com/atharvsinha"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/40 text-xs font-mono text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white hover:border-zinc-950/40 dark:hover:border-white/40 transition-all duration-300 shadow-xs"
               >
@@ -131,9 +131,9 @@ export default function Home() {
               </a>
 
               {/* LinkedIn */}
-              <a 
-                href="https://linkedin.com/in/atharvsinha" 
-                target="_blank" 
+              <a
+                href="https://linkedin.com/in/atharvsinha"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/40 text-xs font-mono text-zinc-600 dark:text-zinc-300 hover:text-blue-500 hover:border-blue-500/40 dark:hover:text-blue-450 transition-all duration-300 shadow-xs"
               >
@@ -142,8 +142,8 @@ export default function Home() {
               </a>
 
               {/* Email */}
-              <a 
-                href="mailto:atharv.sinha27@gmail.com" 
+              <a
+                href="mailto:atharv.sinha27@gmail.com"
                 className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/40 text-xs font-mono text-zinc-600 dark:text-zinc-300 hover:text-emerald-600 hover:border-emerald-600/40 dark:hover:text-emerald-450 transition-all duration-300 shadow-xs"
               >
                 <Mail className="h-4 w-4" />
@@ -151,7 +151,7 @@ export default function Home() {
               </a>
 
               {/* Contact Trigger Button */}
-              <button 
+              <button
                 onClick={() => setIsContactOpen(true)}
                 className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-950 dark:bg-zinc-50 text-white dark:text-black text-xs font-mono font-bold hover:bg-zinc-800 dark:hover:bg-zinc-200 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-sm cursor-pointer"
               >
