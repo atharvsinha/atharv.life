@@ -6,7 +6,6 @@ import { BrainCircuit, Cpu, Layers, GitBranch } from "lucide-react";
 type Skill = {
   name: string;
   context: string;
-  isCore?: boolean;
 };
 
 type SkillCategory = {
@@ -18,6 +17,47 @@ type SkillCategory = {
   skills: Skill[];
 };
 
+const docUrls: Record<string, string> = {
+  // AI
+  "Agentic AI": "https://www.ibm.com/think/topics/ai-agents",
+  "RAG": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+  "LangGraph": "https://langchain-ai.github.io/langgraph/",
+  "MCP": "https://modelcontextprotocol.io/",
+  "Vercel AI SDK": "https://sdk.vercel.ai/docs",
+  "RLHF & SFT": "https://huggingface.co/blog/rlhf",
+  "CoT / ReAct": "https://arxiv.org/abs/2210.03629",
+  "LLM Fine-tuning": "https://huggingface.co/docs/transformers/training",
+  "Multi-Agent Systems": "https://en.wikipedia.org/wiki/Multi-agent_system",
+
+  // Full-Stack
+  "Next.js (App Router)": "https://nextjs.org/docs",
+  "React / TS": "https://react.dev/",
+  "Python / FastAPI": "https://fastapi.tiangolo.com/",
+  "Golang": "https://go.dev/doc/",
+  "PostgreSQL / NoSQL": "https://www.postgresql.org/docs/",
+  "WebSockets & Streaming": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
+  "Tailwind CSS": "https://tailwindcss.com/docs",
+  "Agora RTC": "https://docs.agora.io/en/",
+
+  // Cloud
+  "AWS Lambda & Serverless": "https://aws.amazon.com/lambda/",
+  "Docker": "https://docs.docker.com/",
+  "GitHub Actions": "https://docs.github.com/en/actions",
+  "RabbitMQ & SQS": "https://www.rabbitmq.com/documentation.html",
+  "Amazon DynamoDB / S3": "https://aws.amazon.com/dynamodb/",
+  "Infrastructure as Code": "https://learn.hashicorp.com/terraform",
+
+  // Tooling & Collaboration
+  "Cursor / Antigravity": "https://www.cursor.com/",
+  "Storybook": "https://storybook.js.org/docs",
+  "Async Distributed Collab": "https://about.gitlab.com/company/culture/all-remote/guide/",
+  "React Query": "https://tanstack.com/query/latest",
+  "Git & Version Control": "https://git-scm.com/doc",
+  "Technical Translation": "https://en.wikipedia.org/wiki/Technical_translation"
+};
+
+
+
 const skillCategories: SkillCategory[] = [
   {
     id: "ai",
@@ -26,13 +66,14 @@ const skillCategories: SkillCategory[] = [
     icon: BrainCircuit,
     glowColor: "hover:shadow-[0_0_30px_-5px_rgba(99,102,241,0.3)] hover:border-indigo-500 dark:hover:border-indigo-400",
     skills: [
-      { name: "Agentic AI", context: "Designed hybrid RL Gym systems for ServiceNow agentic infra.", isCore: true },
-      { name: "RLHF & SFT", context: "Authored gold standard responses and directed 3-6 AI trainers at ServiceNow.", isCore: true },
-      { name: "CoT / ReAct", context: "Specialized ServiceNow cognitive LLM training to surpass Gemini 2.5 Flash.", isCore: true },
-      { name: "LangGraph", context: "Crafted complex multi-agent flows with cycle and state control.", isCore: true },
-      { name: "LLM Fine-tuning", context: "Tuned SFT datasets yielding SOTA-breaking multi-turn reasoning conversations.", isCore: true },
-      { name: "RAG & Vector DBs", context: "Optimized precise search queries with context compression." },
+      { name: "Agentic AI", context: "Designed hybrid RL Gym systems for ServiceNow agentic infra." },
+      { name: "RAG", context: "Optimized precise search queries with context compression." },
+      { name: "LangGraph", context: "Crafted complex multi-agent flows with cycle and state control." },
+      { name: "MCP", context: "Built local context integrations and custom tool connections." },
       { name: "Vercel AI SDK", context: "Implemented streaming responses and structured JSON completions." },
+      { name: "RLHF & SFT", context: "Authored gold standard responses and directed 3-6 AI trainers at ServiceNow." },
+      { name: "CoT / ReAct", context: "Specialized ServiceNow cognitive LLM training to surpass Gemini 2.5 Flash." },
+      { name: "LLM Fine-tuning", context: "Tuned SFT datasets yielding SOTA-breaking multi-turn reasoning conversations." },
       { name: "Multi-Agent Systems", context: "Orchestrated collaborative pods for complex task solving." },
     ],
   },
@@ -43,10 +84,10 @@ const skillCategories: SkillCategory[] = [
     icon: Cpu,
     glowColor: "hover:shadow-[0_0_30px_-5px_rgba(20,184,166,0.3)] hover:border-teal-500 dark:hover:border-teal-400",
     skills: [
-      { name: "Next.js (App Router)", context: "Optimized complex static/dynamic renders and route handlers.", isCore: true },
-      { name: "React / TS", context: "Migrated class structures to hooks/context, eliminating deep prop drilling.", isCore: true },
-      { name: "Python / FastAPI", context: "Built performant microservices for automated form calculations.", isCore: true },
-      { name: "Golang", context: "Optimized backend objective data layers for Ernest portal.", isCore: true },
+      { name: "Next.js (App Router)", context: "Optimized complex static/dynamic renders and route handlers." },
+      { name: "React / TS", context: "Migrated class structures to hooks/context, eliminating deep prop drilling." },
+      { name: "Python / FastAPI", context: "Built performant microservices for automated form calculations." },
+      { name: "Golang", context: "Optimized backend objective data layers for Ernest portal." },
       { name: "PostgreSQL / NoSQL", context: "Designed state-aware document schemas and transaction models." },
       { name: "WebSockets & Streaming", context: "Engineered real-time channels for live data synchronization." },
       { name: "Tailwind CSS", context: "Established bespoke designs with utility rules and modern styles." },
@@ -60,9 +101,9 @@ const skillCategories: SkillCategory[] = [
     icon: Layers,
     glowColor: "hover:shadow-[0_0_30px_-5px_rgba(6,182,212,0.3)] hover:border-cyan-500 dark:hover:border-cyan-400",
     skills: [
-      { name: "AWS Lambda & Serverless", context: "Built automated pricing tools and forms generation backends.", isCore: true },
-      { name: "Docker", context: "Containerized environments for clean cloud provisioning and scaling.", isCore: true },
-      { name: "GitHub Actions", context: "Authored rigid CI/CD checkflows, verifying testing coverage.", isCore: true },
+      { name: "AWS Lambda & Serverless", context: "Built automated pricing tools and forms generation backends." },
+      { name: "Docker", context: "Containerized environments for clean cloud provisioning and scaling." },
+      { name: "GitHub Actions", context: "Authored rigid CI/CD checkflows, verifying testing coverage." },
       { name: "RabbitMQ & SQS", context: "Engineered robust event message systems for async processing." },
       { name: "Amazon DynamoDB / S3", context: "Maintained massive form repositories and state maps." },
       { name: "Infrastructure as Code", context: "Configured Serverless frameworks for modular cloud deployments." },
@@ -75,21 +116,16 @@ const skillCategories: SkillCategory[] = [
     icon: GitBranch,
     glowColor: "hover:shadow-[0_0_30px_-5px_rgba(245,158,11,0.3)] hover:border-amber-500 dark:hover:border-amber-400",
     skills: [
-      { name: "Cursor / Antigravity", context: "Leveraged agentic coding loops to amplify building speed by 3x.", isCore: true },
-      { name: "Storybook", context: "Constructed component visual sandboxes for design consistency.", isCore: true },
-      { name: "Async Distributed Collab", context: "Delivered products asynchronously across 3–5 timezones.", isCore: true },
-      { name: "React Query", context: "Optimized complex server-state caching and form invalidation.", isCore: true },
+      { name: "Cursor / Antigravity", context: "Leveraged agentic coding loops to amplify building speed by 3x." },
+      { name: "Storybook", context: "Constructed component visual sandboxes for design consistency." },
+      { name: "Async Distributed Collab", context: "Delivered products asynchronously across 3–5 timezones." },
+      { name: "React Query", context: "Optimized complex server-state caching and form invalidation." },
       { name: "Git & Version Control", context: "Managed migrations from GitLab, saving $5,000 annually." },
       { name: "Technical Translation", context: "Translated banking requisites into actionable engineering specs." },
     ],
   },
-];
-
-export default function TechStack() {
-  // Keep code, but commented out interactivity mechanisms as requested
-  /* eslint-disable @typescript-eslint/no-unused-vars */
-  const [selectedSkill, setSelectedSkill] = useState<Skill | null>(null);
-  /* eslint-enable @typescript-eslint/no-unused-vars */
+];export default function TechStack() {
+  const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
 
   return (
     <section id="skills" className="py-24 px-6 bg-zinc-50/50 dark:bg-zinc-950/20 relative transition-colors duration-600">
@@ -144,71 +180,55 @@ export default function TechStack() {
                   {category.description}
                 </p>
 
-                {/* Skill Badges (Rendered statically as requested) */}
+                {/* Skill Badges */}
                 <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill) => (
-                    <span
-                      key={skill.name}
-                      /* onClick={() => setSelectedSkill(skill)} - Commented out for now */
-                      className={`text-xs px-3 py-1.5 rounded-lg border transition-all duration-300 flex items-center gap-1 select-none ${
-                        skill.isCore
-                          ? "bg-white/80 dark:bg-zinc-900/80 border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 font-semibold"
-                          : "bg-white/45 dark:bg-zinc-900/30 border-zinc-200 dark:border-zinc-800/80 text-zinc-600 dark:text-zinc-400"
-                      }`}
-                    >
-                      {skill.name}
-                      {skill.isCore && <span className="h-1 w-1 rounded-full bg-blue-500 dark:bg-blue-400 ml-0.5 animate-pulse"></span>}
-                    </span>
-                  ))}
+                  {category.skills.map((skill) => {
+                    const isHovered = hoveredSkill === skill.name;
+                    const docUrl = docUrls[skill.name];
+                    const isClickable = docUrl && skill.name !== "Async Distributed Collab" && skill.name !== "Technical Translation";
+
+                    const badgeClass = isHovered
+                      ? "bg-white/80 dark:bg-zinc-900/80 border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 font-semibold"
+                      : "bg-white/45 dark:bg-zinc-900/35 border-zinc-200/80 dark:border-zinc-800/80 text-zinc-650 dark:text-zinc-300";
+
+                    if (isClickable) {
+                      return (
+                        <a
+                          key={skill.name}
+                          href={docUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onMouseEnter={() => setHoveredSkill(skill.name)}
+                          onMouseLeave={() => setHoveredSkill(null)}
+                          className={`text-xs px-3 py-1.5 rounded-lg border transition-all duration-350 flex items-center select-none cursor-pointer ${badgeClass}`}
+                        >
+                          <span>{skill.name}</span>
+                          <span className={`h-1.5 w-1.5 rounded-full bg-blue-500 dark:bg-blue-400 ml-1.5 transition-all duration-300 ease-out shadow-[0_0_8px_rgba(59,130,246,0.6)] ${
+                            isHovered ? "opacity-100 scale-100 animate-pulse" : "opacity-0 scale-50 pointer-events-none"
+                          }`}></span>
+                        </a>
+                      );
+                    }
+
+                    return (
+                      <span
+                        key={skill.name}
+                        onMouseEnter={() => setHoveredSkill(skill.name)}
+                        onMouseLeave={() => setHoveredSkill(null)}
+                        className={`text-xs px-3 py-1.5 rounded-lg border transition-all duration-350 flex items-center select-none cursor-default ${badgeClass}`}
+                      >
+                        <span>{skill.name}</span>
+                        <span className={`h-1.5 w-1.5 rounded-full bg-blue-500 dark:bg-blue-400 ml-1.5 transition-all duration-300 ease-out shadow-[0_0_8px_rgba(59,130,246,0.6)] ${
+                          isHovered ? "opacity-100 scale-100 animate-pulse" : "opacity-0 scale-50 pointer-events-none"
+                        }`}></span>
+                      </span>
+                    );
+                  })}
                 </div>
               </div>
             );
           })}
         </div>
-
-        {/* Selected Skill Context Panel (Commented out for now)
-        <div className="h-20 flex items-center justify-center">
-          <AnimatePresence mode="wait">
-            {selectedSkill ? (
-              <motion.div
-                key={selectedSkill.name}
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                className="max-w-2xl w-full px-5 py-3.5 rounded-xl border border-blue-200/50 dark:border-blue-800/20 bg-blue-50/10 dark:bg-blue-950/5 text-center flex items-center justify-between gap-4 backdrop-blur-xs"
-              >
-                <div className="flex items-center gap-2">
-                  <span className="text-xs font-mono font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wide">
-                    Context:
-                  </span>
-                  <span className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">
-                    {selectedSkill.name}
-                  </span>
-                  <span className="text-zinc-400 dark:text-zinc-600">—</span>
-                  <span className="text-sm text-zinc-600 dark:text-zinc-300 font-normal">
-                    {selectedSkill.context}
-                  </span>
-                </div>
-                <button
-                  onClick={() => setSelectedSkill(null)}
-                  className="text-xs font-mono font-bold text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200"
-                >
-                  Clear
-                </button>
-              </motion.div>
-            ) : (
-              <motion.div
-                key="empty"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="text-sm font-mono text-zinc-400 dark:text-zinc-600"
-              >
-                Select any skill above to view where it was engineered into production.
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
-        */}
 
       </div>
     </section>

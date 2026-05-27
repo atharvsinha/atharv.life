@@ -50,9 +50,9 @@ const experiences: Experience[] = [
       "Promoted to Pod Lead within weeks; established rigorous validation checks and automated review protocols to steer the engineering team to a project-high <strong>99% client-rated accuracy</strong>.",
       "Architected and deployed <strong>hybrid RL Gym structures</strong> for agentic AI, building mock enterprise sandboxes (generic CSM, ITSM, HRMS) and writing API integration harnesses for Google Calendar, PayPal, and Microsoft Teams.",
       "Constructed complex evaluation suites to test and benchmark cognitive model reasoning (CoT, ReAct), identifying critical edge-cases that ultimately trained models to outperform Gemini 2.5 Flash on key benchmarks.",
-      "Designed automated data pipelines using Python, Pandas, and Vercel AI SDK to compile and synthesize 3-5 turn structured datasets cleanly from raw agent logs."
+      "Designed automated data pipelines using Python and Pandas to compile and synthesize 3-5 turn structured datasets cleanly from raw agent logs."
     ],
-    skills: ["Agentic AI", "RLHF", "SFT", "CoT / ReAct", "LangGraph", "RL Gyms", "Python", "Vercel AI SDK"],
+    skills: ["Agentic AI", "RLHF", "SFT", "CoT / ReAct", "RL Gyms", "Python", "Pandas"],
     highlights: [
       { icon: Users, text: "Managed 3-6 engineers across 4 timezones asynchronously" },
       { icon: Award, text: "Trained ServiceNow LLM to beat Gemini 2.5 Flash on CR benchmark", badge: "CR & CIF" },

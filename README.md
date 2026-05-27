@@ -1,5 +1,7 @@
 # atharv.life
 
+Live at: [atharv.life](https://atharv.life)
+
 Personal portfolio of Atharv Sinha — Full-Stack AI Engineer, Indie Musician, Scuba Diver, and Traveller.
 
 ## Stack
@@ -21,19 +23,6 @@ Personal portfolio of Atharv Sinha — Full-Stack AI Engineer, Indie Musician, S
 - Dark / light mode with zero FOUC
 - Fully responsive (mobile → iPad → desktop)
 - Static pre-render — served from Vercel's global CDN edge
-
-## Local Dev
-
-```bash
-pnpm install
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000)
-
-## Deploy
-
-Push to `main` — Vercel auto-deploys on every commit.
 
 ## License
 

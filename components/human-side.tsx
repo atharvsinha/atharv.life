@@ -9,6 +9,7 @@ type BentoItem = {
   id: string;
   title: string;
   category: string;
+  location: string;
   description: string;
   quote: string;
   imageUrl: string;
@@ -18,10 +19,11 @@ type BentoItem = {
 
 const skydivingItem = {
   id: "skydiving-square",
-  title: "14,000 Feet Terminal Velocity",
+  title: "14,000 Feet Freefall",
   category: "Extreme Sports",
-  description: "Stepping out of aircraft doors at altitude. Seeking extreme perspective shifts and absolute adrenaline focus.",
-  quote: "Gravity is a constant; the fall is a choice.",
+  location: "Chiang Mai",
+  description: "Stepping out of aircraft doors at altitude. Seeking the ultimate adrenaline rush and the incredible silence of high-altitude freefall.",
+  quote: "At 14,000 feet, the world gets quiet, and everything else falls away.",
   imageUrl: "/images/skydiving-square.jpg",
   gridClass: "w-full min-h-[450px] md:min-h-[720px]",
   icon: Wind,
@@ -32,18 +34,20 @@ const items: BentoItem[] = [
     id: "scuba-portrait",
     title: "Deep Sea Buoyancy",
     category: "Scuba Diving",
-    description: "PADI Certified Advanced Open Water Diver exploring marine vectors at 30m depth. Finding absolute quietude and balance in weightless current flows.",
-    quote: "Underwater buoyancy is the purest form of system balance.",
+    location: "Koh Lanta",
+    description: "PADI Certified Advanced Open Water Diver exploring coral reefs and underwater life at 30 meters depth. Finding absolute quietude and peace in weightless current flows.",
+    quote: "Beneath the surface, breathing is the only thing that matters.",
     imageUrl: "/images/scuba-portrait.jpg",
     gridClass: "md:col-span-1 md:row-span-2 min-h-[380px] md:min-h-[480px]",
     icon: Compass,
   },
   {
     id: "scuba-landscape",
-    title: "Coral Reef Navigation",
+    title: "Drift Diving & Current Exploration",
     category: "Ocean Exploration",
-    description: "Navigating deep ocean trenches, tracking tropical marine systems, and studying underwater acoustics across active drift channels.",
-    quote: "Deep drift currents are nature's async queues.",
+    location: "Koh Lanta",
+    description: "Navigating deep ocean trenches, drift diving along dynamic ocean currents, and observing diverse marine ecosystems in their natural habitat.",
+    quote: "Going where the current takes you is the best way to explore.",
     imageUrl: "/images/scuba-landscape.jpg",
     gridClass: "md:col-span-2 md:row-span-2 min-h-[380px] md:min-h-[480px]",
     icon: Compass,
@@ -52,18 +56,20 @@ const items: BentoItem[] = [
     id: "rainbow-waterfall",
     title: "The Mountain Mist",
     category: "Wilderness Trails",
-    description: "Hiking through highland mist and tropical waterfall vapor, chasing natural perspective shifts in high-altitude terrain.",
-    quote: "High elevation brings clear technical vision.",
+    location: "North Sikkim",
+    description: "Hiking through highland mist and tropical waterfall vapor, discovering hidden trails and taking in the raw beauty of high-altitude landscapes.",
+    quote: "The hardest climbs always lead to the most breathtaking views.",
     imageUrl: "/images/rainbow-waterfall.jpg",
     gridClass: "md:col-span-1 md:row-span-2 min-h-[380px] md:min-h-[480px]",
     icon: Wind,
   },
   {
     id: "music-performance",
-    title: "Live Music Sprints",
+    title: "Live Ambient Indie Rock",
     category: "Guitar Session",
-    description: "Composing organic harmonies and performing guitar/vocal live sets, bridging creative logic with real-time crowd energy.",
-    quote: "A live session is code running in production.",
+    location: "Bangalore",
+    description: "Composing clean electric melodies, ambient soundscapes, and performing guitar/vocal live sets, sharing stories and connecting with the energy of a live audience.",
+    quote: "There is an incredible magic in sharing a live song with a room full of strangers.",
     imageUrl: "/images/music-performance.jpg",
     gridClass: "md:col-span-2 md:row-span-2 min-h-[380px] md:min-h-[480px]",
     icon: Music,
@@ -72,18 +78,20 @@ const items: BentoItem[] = [
     id: "cubbon-library",
     title: "Cubbon Park Library",
     category: "Heritage & Quietude",
-    description: "Reading under red-brick arches and high ceilings in the heart of Bangalore's green lungs. Finding technical focus in archival silence.",
-    quote: "Amidst old brick and green canopy, thoughts compile clearly.",
+    location: "Bangalore",
+    description: "Reading under red-brick arches and high ceilings in the heart of Bangalore's green lungs, surrounded by history and the rustle of old pages.",
+    quote: "In the quiet corners of an old library, time seems to stand completely still.",
     imageUrl: "/images/cubbon-library.jpg",
     gridClass: "md:col-span-1 md:row-span-2 min-h-[380px] md:min-h-[480px]",
     icon: BookOpen,
   },
   {
     id: "travel",
-    title: "Timezone Nomadism",
+    title: "Wandering the World",
     category: "Global Wandering",
-    description: "Deploying high-velocity codebases while wandering coastlines and mountain trails, bridging async communications across 3-5 global zones.",
-    quote: "Different coordinates, same production uptime.",
+    location: "Phi Phi",
+    description: "Exploring unfamiliar cities, walking scenic coastlines, and hiking mountain trails to experience different cultures and perspectives.",
+    quote: "Travel is not about the destination, but the new eyes it gives you.",
     imageUrl: "/images/travel-nomadism.jpg",
     gridClass: "md:col-span-3 md:row-span-1 min-h-[220px] md:min-h-[280px]",
     icon: Map,
@@ -114,7 +122,7 @@ export default function HumanSide() {
               Travels
             </h2>
             <p className="mt-4 text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm md:text-base">
-              When I close the editor, I explore vertical vectors, deep ocean acoustics, and musical composition. Buoyancy, gravity, travel, and performance drive my creative balance.
+              When I close the editor, I look for adventure in the outdoors. Whether diving in the deep ocean, writing acoustic music, or hiking remote trails, I find my balance in exploring the world around me.
             </p>
           </div>
 
@@ -143,7 +151,7 @@ export default function HumanSide() {
                 {/* Top: Icon and Category badge */}
                 <div className="flex items-center justify-between w-full self-start">
                   <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-zinc-300 bg-white/10 backdrop-blur-xs px-2.5 py-1 rounded-md border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    {skydivingItem.category}
+                    {skydivingItem.category} • {skydivingItem.location}
                   </span>
                   <div className="h-8 w-8 rounded-full bg-white/10 backdrop-blur-xs flex items-center justify-center text-white border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <Wind className="h-4 w-4" />
@@ -158,11 +166,6 @@ export default function HumanSide() {
                   <h3 className="text-xl md:text-2xl font-bold text-white tracking-tight mb-2">
                     {skydivingItem.title}
                   </h3>
-
-                  {/* Collapsible details on hover */}
-                  <p className="text-xs md:text-sm text-zinc-300 leading-relaxed font-normal max-w-md transition-all duration-550 opacity-0 h-0 overflow-hidden group-hover:opacity-100 group-hover:h-auto group-hover:mt-2.5">
-                    {skydivingItem.description}
-                  </p>
                 </div>
               </div>
 
@@ -199,7 +202,7 @@ export default function HumanSide() {
                   {/* Top: Icon and Category badge */}
                   <div className="flex items-center justify-between w-full self-start">
                     <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-zinc-300 bg-white/10 backdrop-blur-xs px-2.5 py-1 rounded-md border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      {item.category}
+                      {item.category} • {item.location}
                     </span>
                     <div className="h-8 w-8 rounded-full bg-white/10 backdrop-blur-xs flex items-center justify-center text-white border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       <Icon className="h-4 w-4" />
@@ -214,11 +217,6 @@ export default function HumanSide() {
                     <h3 className="text-xl md:text-2xl font-bold text-white tracking-tight mb-2">
                       {item.title}
                     </h3>
-
-                    {/* Collapsible details on hover or desktop visibility */}
-                    <p className="text-xs md:text-sm text-zinc-300 leading-relaxed font-normal max-w-md transition-all duration-550 opacity-0 h-0 overflow-hidden group-hover:opacity-100 group-hover:h-auto group-hover:mt-2.5">
-                      {item.description}
-                    </p>
                   </div>
                 </div>
 
@@ -269,7 +267,7 @@ export default function HumanSide() {
                     {/* Category and Close */}
                     <div className="flex items-center justify-between mb-6">
                       <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-cyan-600 dark:text-cyan-400 bg-cyan-500/10 dark:bg-cyan-500/5 px-2.5 py-1 rounded-md border border-cyan-500/20">
-                        {selectedItem.category}
+                        {selectedItem.category} • {selectedItem.location}
                       </span>
                       <button
                         onClick={() => setSelectedItem(null)}
@@ -294,12 +292,6 @@ export default function HumanSide() {
                     <p className="text-sm md:text-base text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal">
                       {selectedItem.description}
                     </p>
-                  </div>
-
-                  {/* Footer Quote / Meta */}
-                  <div className="mt-8 pt-4 border-t border-zinc-100 dark:border-zinc-900 flex items-center justify-between text-[10px] font-mono text-zinc-400 dark:text-zinc-500">
-                    <span>EXP-INDEX: 00{selectedItem.id.length}</span>
-                    <span>VERIFIED EXPLORATION</span>
                   </div>
                 </div>
               </motion.div>

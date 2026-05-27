@@ -98,13 +98,23 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col gap-10">
           {/* Top Row: Call-to-Action and Social Badges */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-10 border-b border-zinc-200/50 dark:border-zinc-900/50">
-            <div className="flex flex-col items-center md:items-start text-center md:text-left">
-              <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100 tracking-tight">
-                Let's build something epic
-              </h3>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 max-w-sm leading-relaxed">
-                Drop a line, inspect the source, or trace the nomadic adventures.
-              </p>
+            <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4">
+              <div className="flex flex-col items-center md:items-start text-center md:text-left">
+                <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100 tracking-tight">
+                  Let's build something epic
+                </h3>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 max-w-sm leading-relaxed">
+                  Drop a line, inspect the source, or trace the nomadic adventures.
+                </p>
+              </div>
+
+              <button
+                onClick={() => setIsContactOpen(true)}
+                className="w-fit flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-950 dark:bg-zinc-50 text-white dark:text-black text-xs font-mono font-bold hover:bg-zinc-800 dark:hover:bg-zinc-200 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-sm cursor-pointer"
+              >
+                <span>Start Collaboration</span>
+                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              </button>
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-3">
@@ -149,15 +159,6 @@ export default function Home() {
                 <Mail className="h-4 w-4" />
                 <span>atharv.sinha27@gmail.com</span>
               </a>
-
-              {/* Contact Trigger Button */}
-              <button
-                onClick={() => setIsContactOpen(true)}
-                className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-950 dark:bg-zinc-50 text-white dark:text-black text-xs font-mono font-bold hover:bg-zinc-800 dark:hover:bg-zinc-200 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-sm cursor-pointer"
-              >
-                <span>Initialize Handshake</span>
-                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              </button>
             </div>
           </div>
 

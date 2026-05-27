@@ -178,19 +178,17 @@ export default function MusicPlayer() {
                 {directLinks.map((link) => {
                   const LinkIcon = link.icon;
                   return (
-                    <a
+                    <button
                       key={link.name}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`flex items-center justify-between py-3 px-4 rounded-xl border border-zinc-200 dark:border-zinc-800 text-xs font-mono font-semibold transition-all group ${link.color}`}
+                      onClick={() => window.open(link.url, "_blank", "noopener,noreferrer")}
+                      className={`flex items-center justify-between py-3 px-4 rounded-xl border border-zinc-200 dark:border-zinc-800 text-xs font-mono font-semibold transition-all group cursor-pointer ${link.color}`}
                     >
                       <div className="flex items-center gap-2.5">
                         <LinkIcon className="h-4 w-4" />
                         <span>Listen on {link.name}</span>
                       </div>
                       <ExternalLink className="h-3.5 w-3.5 opacity-60 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                    </a>
+                    </button>
                   );
                 })}
               </div>

@@ -76,9 +76,9 @@ const personas: Persona[] = [
     accentClass: "bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border-indigo-200/50 dark:border-indigo-900/60",
     glowColor: "rgba(99, 102, 241, 0.25)",
     stats: [
-      { label: "Years Experience", value: "5" },
-      { label: "Ernest UX Steps Saved", value: "75%" },
-      { label: "SOTA Models Trained", value: "1" },
+      { label: "Years Experience", value: "5+" },
+      { label: "UX Optimisation (Ernest)", value: "75%" },
+      { label: "B2B SaaS Integrations", value: "10+" },
     ],
   },
   {
@@ -102,7 +102,7 @@ const personas: Persona[] = [
     icon: Compass,
     title: "PADI Advanced Open Water Diver",
     tagline:
-      "There's a distinct kind of stillness you find at 30 meters down. Navigating deep currents requires this absolute, quiet focus where everything slows down, but you still feel that sharp, internal rush. I try to bring that exact headspace—that calm, calculated clarity—back to the surface when navigating through tech and travels.",
+      "There's a distinct kind of stillness you find at 30 meters down. Navigating deep currents requires this absolute, quiet focus where everything slows down, but you still feel that sharp, internal rush. It's a completely different world under the surface—one governed by pure presence and peace.",
     accentClass: "bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border-cyan-200/50 dark:border-cyan-900/60",
     glowColor: "rgba(6, 182, 212, 0.25)",
     stats: [
