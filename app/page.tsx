@@ -84,7 +84,7 @@ export default function Home() {
         <TechStack />
 
         {/* Section 2: Interactive Resume & Timeline */}
-        <Resume />
+        <Resume onContactClick={() => setIsContactOpen(true)} />
 
         {/* Section 3: The Human Side (Cinematic Gallery) */}
         <HumanSide />

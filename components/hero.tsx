@@ -70,7 +70,7 @@ const personas: Persona[] = [
     id: "developer",
     name: "AI Engineer",
     icon: Terminal,
-    title: "Product Engineer (Fullstack, AI & Everything Else)",
+    title: "Product Engineer (Fullstack & AI)",
     tagline:
       "Specializing in shipping robust products from 0 to 1. Combining SOTA agentic AI & automation systems with high-performance fullstack frameworks—spanning live video platforms, scalable calculation engines, and global B2B integrations.",
     accentClass: "bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border-indigo-200/50 dark:border-indigo-900/60",
@@ -320,13 +320,13 @@ export default function Hero({ onContactClick }: { onContactClick: () => void })
                     <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
                   </button>
                   <a
-                    href="https://drive.google.com/file/d/1dH5pcsXNbY1mQND9UoFsKxVq1cU__AHv/view?usp=drive_link"
+                    href="/resume"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full sm:w-auto px-6 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 bg-white/40 dark:bg-zinc-900/40 backdrop-blur-xs text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-zinc-50 text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <FileText className="h-3.5 w-3.5" />
-                    Download Resume
+                    View Resume
                   </a>
                 </div>
               )}
