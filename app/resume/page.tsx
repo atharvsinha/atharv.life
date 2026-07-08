@@ -36,7 +36,7 @@ export default function ResumePage() {
     }
   };
 
-  const pdfUrl = encodeURI("/Atharv Sinha — Resume 2026.pdf");
+  const pdfUrl = encodeURI("/Atharv_Sinha_Resume.pdf");
 
   return (
     <div className="min-h-screen flex flex-col bg-zinc-50 dark:bg-[#030306] transition-colors duration-500 relative">
@@ -67,7 +67,7 @@ export default function ResumePage() {
             {/* Direct Download Button */}
             <a
               href={pdfUrl}
-              download="Atharv Sinha — Resume.pdf"
+              download="Atharv_Sinha_Resume.pdf"
               className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 bg-white/40 dark:bg-zinc-900/40 backdrop-blur-xs text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-zinc-50 text-xs font-bold transition-all shadow-xs cursor-pointer"
               title="Download PDF"
             >

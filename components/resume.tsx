@@ -50,62 +50,60 @@ const experiences: Experience[] = [
   {
     id: "turing",
     company: "ServiceNow (via Turing)",
-    role: "Senior Software Engineer – AI Tools & Automation",
+    role: "Senior Software Engineer & Technical Pod Lead",
     period: "Oct 2024 – Jan 2026",
-    location: "Goa, India (Remote)",
+    location: "Remote, India",
     asyncFriendly: true,
-    impactBadges: ["99% Pod Accuracy", "10x Audit Acceleration", "Hybrid RL Gyms"],
+    impactBadges: ["99% Pod Accuracy", "RLHF & SFT", "RL Gyms"],
     achievements: [
-      "Engineered automated <strong>LLM-powered evaluation pipelines and agentic audit schemas</strong> using frontier models to programmatically lint and validate notebook code execution, accelerating audits by 10x.",
-      "Shifted team focus to complex reasoning datasets incorporating **Chain-of-Thought (CoT) and ReAct** thinking traces, steering the distributed team to a project-high <strong>99% client-rated accuracy</strong>.",
-      "Architected and deployed **hybrid RL Gym structures** for agentic AI, building mock enterprise sandboxes (generic CSM, ITSM, HRMS) and writing integration harnesses for Google Calendar, PayPal, and Microsoft Teams."
+      "<strong>Technical leadership</strong>: Promoted to Pod Lead within weeks of joining, leading a 4-engineer pod across 5 time zones and achieving a project-leading <strong>99% client-rated accuracy score</strong>.",
+      "<strong>Systems engineering</strong>: Architected and shipped enterprise workflow systems in Python, engineering structured reasoning pipelines (<strong>Chain-of-Thought + ReAct</strong>) benchmarked against Gemini 2.5 Flash for production reliability.",
+      "<strong>Quality standards</strong>: Authored evaluation frameworks and data-quality engineering standards adopted project-wide."
     ],
-    skills: ["Agentic AI", "RLHF", "SFT", "CoT / ReAct", "RL Gyms", "Python", "Pandas"],
+    skills: ["RLHF & SFT", "CoT / ReAct", "RL Gyms", "Python", "Pandas", "System Design"],
     highlights: [
-      { icon: Users, text: "Managed 4 trainers across 4 timezones asynchronously" },
-      { icon: Award, text: "Trained ServiceNow LLM to beat Gemini 2.5 Pro on CR benchmark", badge: "CoT & ReAct" },
+      { icon: Users, text: "Led 4-engineer pod across 5 time zones asynchronously" },
+      { icon: Award, text: "Engineered reasoning pipelines benchmarked against Gemini 2.5 Flash", badge: "CoT / ReAct" },
     ],
     bannerGradient: "from-indigo-600 to-blue-700 dark:from-indigo-950/60 dark:to-blue-950/40",
-    caseStudyBackground: "I joined ServiceNow via Turing to lead AI alignment, instruction fine-tuning, and reinforcement learning pipelines for frontier LLMs. The central mission was to transition model capabilities from basic text outputs into state-of-the-art cognitive reasoning, multi-turn instruction-following, and fully autonomous action-execution agents.",
+    caseStudyBackground: "I joined ServiceNow via Turing to lead systems engineering, reinforcement learning (RLHF), supervised fine-tuning (SFT) pipelines, and RL Gym environments. As a Senior Software Engineer and Technical Pod Lead, I was responsible for coordinating a distributed team of engineers, compiling structured reasoning traces, and authoring rigorous quality evaluation standards for complex enterprise applications.",
     caseStudyPhases: [
       {
-        title: "Phase 1: Microsoft RLHF Code Alignment (Oct – Dec 2024)",
+        title: "Phase 1: Technical Leadership & Pod Management",
         details: [
-          "Executed high-fidelity <strong>Reinforcement Learning from Human Feedback (RLHF)</strong> alignment protocols for Microsoft coding projects.",
-          "Evaluated 4-5 high-complexity programming tasks daily, containing a system prompt, 4 candidate model outputs, and a comprehensive, human-authored ideal response.",
-          "Audited and executed every single code snippet locally to verify <strong>syntax correctness, runtime viability, edge-case safety</strong>, and modern API/library compliance (deprecating outdated practices)."
+          "Promoted to Pod Lead shortly after joining the team, directing a 4-engineer pod across 5 time zones.",
+          "Coordinated task delegation and reviews asynchronously, maintaining high velocity and collaboration.",
+          "Achieved a project-leading <strong>99% client-rated accuracy score</strong> on final deliverables."
         ]
       },
       {
-        title: "Phase 2: ServiceNow Cognitive SFT Alignment (Dec 2024 – Mar 2025)",
+        title: "Phase 2: Reasoning Pipelines & Benchmarking",
         details: [
-          "Directed Supervised Fine-Tuning (SFT) data compilation for complex instruction-following inside ServiceNow's cognitive domain.",
-          "Designed 3-5 turn conversational datasets with custom system instructions, engineered specifically to <strong>break SOTA models</strong> by introducing contradictory rules and extreme constraints.",
-          "Authored 3-4 highly complex, model-breaking datasets daily; quickly became the highest-velocity contributor and was promoted to <strong>Pod Lead</strong>."
+          "Architected and shipped robust enterprise workflow systems in Python.",
+          "Implemented structured reasoning traces using <strong>Chain-of-Thought (CoT) and ReAct</strong> thinking patterns to handle complex multi-step tasks.",
+          "Evaluated and benchmarked reasoning pipelines against Gemini 2.5 Flash to ensure production-level latency and accuracy reliability."
         ]
       },
       {
-        title: "Phase 3: Pod Leadership & Reasoning Frameworks (Mar – Sep 2025)",
+        title: "Phase 3: RLHF & SFT Alignment",
         details: [
-          "Mentored and reviewed the work of 4 advanced trainers distributed across 4 different timezones asynchronously.",
-          "Acted as a core research resource: analyzed incoming ML research papers (such as CoT, ReAct) and compiled them into pragmatic, highly technical dataset guidelines.",
-          "Shifted the team to complex reasoning coding datasets incorporating <strong>Chain-of-Thought (CoT) and ReAct</strong> thinking traces, reviewing 4 prompts per trainer daily.",
-          "Maintained an outstanding, team-high <strong>99% client-verified accuracy rating</strong> based on direct feedback across all pods."
+          "Supervised alignment pipelines incorporating Reinforcement Learning from Human Feedback (RLHF) and Supervised Fine-Tuning (SFT).",
+          "Designed structured dataset specifications and evaluation frameworks to fine-tune and align models on reasoning and instruction-following tasks.",
+          "Validated model responses for syntax correctness, runtime viability, and edge-case safety."
         ]
       },
       {
-        title: "Phase 4: Agentic AI & Hybrid RL Gyms (Sep 2025 – Jan 2026)",
+        title: "Phase 4: RL Gym Environments",
         details: [
-          "Directed the architecture of an innovative <strong>Reinforcement Learning (RL) Gym</strong> designed to train autonomous AI agents.",
-          "Built mock enterprise environments mimicking ServiceNow Customer Service Management (CSM), IT Service Management (ITSM), Human Resource Management Systems (HRMS), and external services (Google Calendars, PayPal, Microsoft Teams).",
-          "Led a cross-timezone pod across multiple RL Gym environments, forming one of the first groups globally to build and validate <strong>hybrid RL Gym environments</strong> where autonomous agents navigate multi-system loops, complete actions, and self-correct based on rewards."
+          "Designed reinforcement learning (RL) Gym environments and simulated sandboxes for model training.",
+          "Created custom mock execution environments to test and optimize agent actions, reward metrics, and automated feedback loops."
         ]
       }
     ],
     caseStudyOutcomes: [
-      "The datasets and reasoning models compiled by our pods enabled ServiceNow's cognitive model to officially **outperform Google's Gemini 2.5 Pro** in the cognitive reasoning domain.",
-      "Successfully deployed hybrid RL Gyms connecting CSM, ITSM, and HRMS to Google Calendars, PayPal, and Microsoft Teams.",
-      "Maintained a **99% client-verified accuracy rating** across my entire distributed pod."
+      "Led a 4-engineer pod to achieve a project-leading <strong>99% client-rated accuracy score</strong>.",
+      "Successfully built enterprise workflow systems and reasoning pipelines (CoT + ReAct) benchmarked against Gemini 2.5 Flash.",
+      "Authored evaluation frameworks and data-quality engineering standards adopted project-wide."
     ]
   },
   {
@@ -113,51 +111,51 @@ const experiences: Experience[] = [
     company: "Ernest (joinernest.com)",
     role: "Software Engineer (Contract)",
     period: "Jun 2024 – Aug 2024",
-    location: "Remote (Global Team)",
+    location: "Remote",
     asyncFriendly: true,
-    impactBadges: ["200% Access Speedup", "75% Steps Saved", "50% Clicks Removed"],
+    impactBadges: ["75% Friction Reduction", "50% Latency Cut", "PWA Integration"],
     achievements: [
-      "Revamped the core objectives portal using React, React Query, and Go, reducing the steps required to access objectives by <strong>75%</strong> and driving meaningful improvements in daily active workflows.",
-      "Re-engineered a legacy project timeline tool into a fully interactive, highly performant graph-based visualization layout, eliminating redundant UI paths and cutting access steps by <strong>50%</strong>.",
-      "Optimized Go API endpoints powering the objectives portal, significantly reducing latency and improving platform reliability."
+      "<strong>Product delivery</strong>: Revamped the core objectives portal (React, React Query, Go), reducing user workflow friction by <strong>75%</strong> and lifting daily active engagement.",
+      "<strong>Performance</strong>: Re-engineered a legacy timeline system into a high-performance, graph-based visualization tool with custom React rendering, cutting data access latency by <strong>50%</strong>.",
+      "<strong>Platform work</strong>: Integrated the rebuilt workspace into Ernest's PWA, optimized backend Go API endpoints, and contributed core components to a Storybook-driven design system."
     ],
     skills: ["TypeScript", "React", "React Query", "Golang", "PWA", "Storybook"],
     highlights: [
       { icon: Zap, text: "Optimized Go API endpoints and reduced database query loads" },
-      { icon: TrendingUp, text: "75% steps saved for end users accessing objectives" }
+      { icon: TrendingUp, text: "75% workflow friction reduced for portal users" }
     ],
     bannerGradient: "from-teal-600 to-emerald-700 dark:from-teal-900/60 dark:to-emerald-900/40",
-    caseStudyBackground: "I contracted as a Software Engineer at Ernest (joinernest.com) to resolve high-friction user paths in their OKR (Objectives and Key Results) platform, which is used daily by enterprise team leads. The legacy experience required too many steps to inspect, edit, and understand project progress, leading to drop-offs. Working within a global team, I coordinated asynchronously across multiple timezones (US, LATAM, Europe, Africa, APAC).",
+    caseStudyBackground: "I contracted as a Software Engineer at Ernest (joinernest.com) to resolve high-friction user paths in their OKR (Objectives and Key Results) platform, which is used daily by enterprise team leads. Working in a distributed remote setup, I focused on frontend optimization, backend API latency reduction, and component consistency.",
     caseStudyPhases: [
       {
         title: "Objectives Portal Revamp",
         details: [
-          "Rewrote the objectives portal from scratch using a modern React, React Query, and Go stack.",
-          "Optimized rendering by caching server responses, reducing client-side network roundtrips.",
-          "Optimised access to the objectives portal by <strong>200%</strong>, cutting down the user steps required to view or modify an objective by <strong>75%</strong>."
+          "Rewrote the objectives portal using React, React Query, and Go.",
+          "Optimized state rendering and queries, reducing user workflow friction by <strong>75%</strong>.",
+          "Helped drive user engagement by providing a faster, cleaner objective tracking experience."
         ]
       },
       {
-        title: "Interactive Graph-Based Timeline",
+        title: "Interactive Timeline & Performance Tuning",
         details: [
-          "Designed and implemented a custom interactive project timeline graph.",
-          "Used React rendering algorithms and clean Canvas/SVG transitions to visualize objective relationships as a clean, interactive graph.",
-          "Enabled users to click on any node directly in the graph to jump to the respective project, eliminating <strong>50% of the previous navigation clicks</strong> and providing an extremely fluid user experience."
+          "Re-engineered a legacy timeline system into a high-performance, graph-based visualization tool.",
+          "Implemented optimized custom React rendering, cutting data access latency by <strong>50%</strong>.",
+          "Created a seamless, interactive user experience for viewing project milestones."
         ]
       },
       {
-        title: "PWA & Design System Integration",
+        title: "PWA & Storybook Integration",
         details: [
-          "Successfully integrated the revamped objectives portal into Ernest's Progressive Web App (PWA) framework.",
-          "Developed and documented components within Ernest's Storybook-driven custom design system.",
-          "Optimised Go API endpoints powering the objectives portal, significantly reducing latency and improving platform reliability."
+          "Integrated the rebuilt objectives workspace into Ernest's PWA framework for offline capability.",
+          "Optimized backend Go API endpoints to ensure low response times.",
+          "Contributed core reusable components to the shared Storybook-driven design system."
         ]
       }
     ],
     caseStudyOutcomes: [
-      "Portal access latency and click-depth were reduced by **75%** for end users.",
-      "Revamped a legacy static timeline tool into a dynamic, interactive graph tool that cut access clicks by **50%**.",
-      "Seamlessly integrated all systems into a highly responsive PWA with full offline capabilities."
+      "Reduced user workflow friction in the objectives portal by <strong>75%</strong>.",
+      "Cut project timeline data access latency by <strong>50%</strong>.",
+      "Successfully integrated the workspace into the PWA and contributed to the shared Storybook design system."
     ]
   },
   {
@@ -165,54 +163,48 @@ const experiences: Experience[] = [
     company: "InsureComp",
     role: "Senior Software Engineer",
     period: "Aug 2023 – Jun 2024",
-    location: "Bengaluru (Full Time)",
+    location: "Bangalore, India",
     asyncFriendly: false,
-    impactBadges: ["$5,000 Saved", "50-State Calculation Engine", "Context API Migration"],
+    impactBadges: ["$5,000 Saved", "50+ Dynamic Formulas", "Context API Migration"],
     achievements: [
-      "Decoupled complex layout elements from monolithic class states by migrating the client-side codebase to Functional React and the Context API, completely eliminating prop drilling.",
-      "Designed and deployed a multi-tenant interest and premium calculation engine in Node.js, handling 50 different complex insurance formulas specific to each US state dynamically.",
-      "Engineered an automated PDF generator that produces customizable, editable PDF ACORD forms that automatically render and populate based on state rules, employee count, and work codes."
+      "<strong>Architecture</strong>: Architected modular client-side state (React, Context API), eliminating multi-level prop-drilling across <strong>50+ dynamic workspaces</strong>.",
+      "<strong>Core systems</strong>: Engineered a decoupled, multi-tenant calculation engine in Node.js computing <strong>50+ dynamic insurance formulas</strong> with state-by-state validation.",
+      "<strong>Client leadership</strong>: Technical Lead and primary client liaison for US banking enterprise clients, translating business goals into engineering blueprints while mentoring 3 junior developers.",
+      "<strong>Infrastructure</strong>: Spearheaded GitLab→GitHub migration, cutting operational overhead by <strong>$5,000/year</strong>."
     ],
-    skills: ["TypeScript", "React", "Node.js", "Context API", "AWS Lambda", "Serverless", "Docker"],
+    skills: ["TypeScript", "React", "Node.js", "Context API", "AWS", "Serverless", "Docker", "GitLab", "GitHub"],
     highlights: [
-      { icon: Zap, text: "Architected decoupled multi-tenant dynamic interest calculation engine" },
+      { icon: Users, text: "Technical Lead and client liaison for US banking enterprise clients" },
       { icon: Layers, text: "Migrated GitLab infra to GitHub, reducing cloud billing by $5,000/yr" }
     ],
     bannerGradient: "from-zinc-700 to-slate-800 dark:from-zinc-800/80 dark:to-slate-900/60",
-    caseStudyBackground: "I was brought on as a Senior Software Engineer to overhaul InsureComp's legacy monolithic client-side application and stabilize its multi-state calculation backend. The legacy codebase was written in legacy class-based React, resulting in severe prop-drilling patterns and layout instability.",
+    caseStudyBackground: "I was brought on as a Senior Software Engineer to overhaul InsureComp's legacy monolithic client-side application, stabilize its multi-state calculation backend, and act as Technical Lead and client liaison for US banking enterprise clients.",
     caseStudyPhases: [
       {
         title: "Core Architectural Overhaul",
         details: [
           "Shifted the entire client-side codebase from class-based React to functional React and the Context API.",
-          "Decoupled complex layout elements from underlying state controllers, completely eliminating prop drilling."
+          "Decoupled complex layout elements from underlying state controllers, completely eliminating prop drilling across 50+ dynamic workspaces."
         ]
       },
       {
         title: "Decoupled 50-State Calculation Engine",
         details: [
           "Designed and deployed a multi-tenant interest and premium calculation engine in Node.js.",
-          "Handled <strong>50 different complex insurance interest formulas</strong> specific to each US state, validating calculations dynamically against strict state-by-state regulatory specs.",
-          "Mentored 3-4 junior developers on the complex insurance backend calculations."
+          "Handled 50+ different complex insurance formulas specific to each US state, validating calculations dynamically against strict state-by-state regulatory specs.",
+          "Mentored 3 junior developers on the complex insurance backend calculations."
         ]
       },
       {
-        title: "Custom Editable PDF ACORD Forms",
+        title: "DevOps & Infrastructure",
         details: [
-          "Engineered a custom, automated PDF generator that produces customizable, editable PDF ACORD forms.",
-          "The engine automatically renders, populates, and adjusts forms in real time based on state rules, employee count, and work codes."
-        ]
-      },
-      {
-        title: "Codebase Migration & Team Mentoring",
-        details: [
-          "Led the transition of their repository, dev pipeline, and CI/CD infrastructure from GitLab to GitHub, saving the company $5,000 USD annually in SaaS billing.",
-          "Served as the core technical liaison in client business calls to convert high-level demands from US banking clients into precise engineering specs and code."
+          "Led the transition of the repository, dev pipeline, and CI/CD infrastructure from GitLab to GitHub.",
+          "Optimized CI/CD pipelines, saving the company $5,000/year in operational and SaaS billing overhead."
         ]
       }
     ],
     caseStudyOutcomes: [
-      "Saved **$5,000 USD annually** in SaaS billing by migrating the codebase from GitLab to GitHub.",
+      "Saved <strong>$5,000/year</strong> in SaaS billing by migrating the codebase from GitLab to GitHub.",
       "Successfully supported calculations for all 50 states with zero post-deployment revision cycles.",
       "Decoupled monolithic state structures, reducing layout repaints and fixing UI lags."
     ]
@@ -220,103 +212,90 @@ const experiences: Experience[] = [
   {
     id: "yoti",
     company: "Yoti",
-    role: "Fullstack Software Engineer - Integrations",
+    role: "Full-Stack Software Engineer – Integrations",
     period: "Oct 2022 – May 2023",
-    location: "Remote (Global Team)",
+    location: "Remote",
     asyncFriendly: true,
-    impactBadges: ["10+ Live iPaaS Workflows", "Stripe Checkout Integrated", "Biometric KYC Flows"],
+    impactBadges: ["Biometric KYC Flows", "eSignatures Integration", "Automated Onboarding"],
     achievements: [
-      "Designed and implemented a dedicated, high-performance marketplace of complex B2B integration workflows, successfully publishing 10+ production-grade live integrations on a Prismatic iPaaS environment.",
-      "Architected a multi-step onboarding integration that unified Rippling, BambooHR, and Zoho, combining email automation, online KYC biometric face recognition/ID validation, and eSignatures into a unified flow.",
-      "Engineered Stripe-integrated billing and onboarding workflows, enabling users to complete signup, biometric KYC verification, sign electronic contracts, and trigger Stripe checkout in a single uninterrupted flow."
+      "<strong>Integrations</strong>: Engineered an automated integration marketplace linking Yoti's eSignature and biometric identity (KYC/age estimation) systems with enterprise B2B SaaS platforms.",
+      "<strong>Workflow automation</strong>: Designed an end-to-end employee onboarding workflow integrating Rippling, BambooHR, and Zoho for automated verification and documentation.",
+      "<strong>Payments</strong>: Built secure Stripe billing integrations unifying registration, KYC checks, and payment processing; expanded Yoti's B2B ecosystem with reusable workflow templates."
     ],
-    skills: ["Prismatic iPaaS", "Biometric ID Check", "eSignatures", "Stripe", "Node.js", "HR Integration"],
+    skills: ["Node.js", "Stripe", "eSignatures", "Biometrics", "API Integrations", "Workflow Automation"],
     highlights: [
       { icon: Clock, text: "Delivered B2B integrations with zero synchronous overhead" },
       { icon: Layers, text: "Combined eSignature + biometric products with Rippling & Zoho" }
     ],
     bannerGradient: "from-purple-650 to-indigo-750 dark:from-purple-900/60 dark:to-indigo-900/40",
-    caseStudyBackground: "I focused on accelerating adoption of Yoti's secure core identity products: its eSignature platform and its SOTA biometric face recognition/age estimation engine. The goal was to build frictionless, automated workflows connecting Yoti directly with popular enterprise ecosystems.",
+    caseStudyBackground: "I focused on accelerating adoption of Yoti's secure core identity products: its eSignature platform and its biometric face recognition/age estimation engine. The goal was to build automated integrations and workflows connecting Yoti directly with popular enterprise HR and payment ecosystems.",
     caseStudyPhases: [
       {
-        title: "B2B SaaS iPaaS Marketplace",
+        title: "B2B SaaS Integration Marketplace",
         details: [
-          "Designed and implemented a dedicated, high-performance marketplace of complex B2B integration workflows.",
-          "Released <strong>10+ production-grade live integrations</strong> on a Prismatic iPaaS environment, connecting Yoti's biometric identity check and eSignature suites to popular business platforms."
+          "Engineered an automated integration marketplace linking Yoti's identity systems with external business platforms.",
+          "Released multiple production-grade live integrations connecting biometric identity check and eSignature suites to popular business applications."
         ]
       },
       {
         title: "Automated Employee Onboarding Flow",
         details: [
-          "Architected a multi-step onboarding integration that unified <strong>Rippling, BambooHR, and Zoho</strong>.",
+          "Architected a multi-step onboarding integration that unified Rippling, BambooHR, and Zoho.",
           "When an employee was hired, the workflow automatically triggered: automated welcome emails -> redirected to online KYC biometric face recognition/ID validation -> automatically requested eSignatures -> onboarded the verified user into the respective HR platforms."
         ]
       },
       {
         title: "Stripe Transactional Verification",
         details: [
-          "Designed Stripe-integrated billing and onboarding workflows.",
-          "Enabled users to execute new subscriptions, complete online biometric KYC verification, sign electronic contracts, and trigger Stripe checkout in a <strong>single, uninterrupted transaction flow</strong>."
-        ]
-      },
-      {
-        title: "Generic Workflows",
-        details: [
-          "Created customizable template modules for storage, email, SMS, and identity-triggered automations."
+          "Built secure Stripe billing integrations that unified registration, KYC verification, and transaction processing.",
+          "Authored reusable workflow templates that enabled enterprise customers to quickly deploy custom integration paths."
         ]
       }
     ],
     caseStudyOutcomes: [
-      "Successfully deployed **10+ B2B SaaS integrations** across identity, storage, and HR tools.",
-      "Automated complex compliance-regulated flows, eliminating manual verification checks."
+      "Successfully automated B2B employee verification by integrating with Rippling, BambooHR, and Zoho.",
+      "Connected eSignature and KYC verification into a unified checkout flow using Stripe.",
+      "Shipped reusable integration templates to speed up client onboarding onto Yoti's platform."
     ]
   },
   {
     id: "bettered",
     company: "Better Ed Co",
-    role: "Fullstack Software Engineer",
+    role: "Full-Stack Software Engineer",
     period: "Jan 2021 – Jun 2022",
-    location: "Remote (First Hires)",
+    location: "Remote",
     asyncFriendly: false,
-    impactBadges: ["Agora RTC Learning", "Interactive Tuners", "Student Video pipelines"],
+    impactBadges: ["Agora RTC Live Video", "Low-Latency Streaming", "Product-Market Fit"],
     achievements: [
-      "Designed and developed the live video classroom architecture utilizing Agora RTC, creating custom real-time canvas-based widgets (Interactive Guitar Tuner, Chord Charts, Chess boards) that updated in lockstep.",
-      "Architected and deployed secure, serverless video processing pipelines on AWS that automatically recorded, compressed, and transcoded child video files securely for parent review.",
-      "Conducted granular product-market fit research in close collaboration with investors and founders to inform platform direction and curriculum optimization."
+      "<strong>Product engineering</strong>: Co-engineered a live, real-time extracurricular learning platform (Agora RTC) delivering low-latency video streaming for global users.",
+      "<strong>Collaboration</strong>: Partnered with founding stakeholders and early-stage investors on product-market fit research to guide platform direction."
     ],
-    skills: ["TypeScript", "React", "Agora RTC", "AWS S3", "Serverless Video Pipelines"],
+    skills: ["TypeScript", "React", "Agora RTC", "WebSockets", "Node.js"],
     highlights: [
-      { icon: Users, text: "Worked alongside investors validating product-market fits" },
-      { icon: Zap, text: "Engineered serverless video processing pipelines for recordings" }
+      { icon: Users, text: "Worked alongside founders validating product-market fits" },
+      { icon: Zap, text: "Co-engineered live video learning platform using Agora RTC" }
     ],
     bannerGradient: "from-rose-500 to-amber-600 dark:from-rose-950/40 dark:to-amber-950/20",
-    caseStudyBackground: "I joined as one of the first software engineering hires to help define product-market fit (PMF) and build Pixical.com, an interactive extracurricular e-learning platform (teaching guitar, chess, dance, and cooking) for kids in the US. I worked closely with early-stage investors and founders to translate user analytics into core features.",
+    caseStudyBackground: "I joined Better Ed Co as a Full-Stack Software Engineer, working as one of the early hires. I co-engineered their live extracurricular learning platform, focusing on real-time video delivery and collaborating with the founding team to refine product features and market fit.",
     caseStudyPhases: [
       {
-        title: "Agora RTC Live Classroom & Interactive Widgets",
+        title: "Agora RTC Live Classroom",
         details: [
-          "Designed and developed the live video classroom architecture utilizing Agora RTC.",
-          "Created custom real-time canvas-based widgets (e.g. Interactive Guitar Tuner, real-time chord charts, and chess boards) that updated in lockstep with the teacher's feed, making lessons highly engaging for children."
+          "Co-engineered a live, real-time extracurricular learning platform using Agora RTC.",
+          "Optimized video streams to ensure low-latency delivery for global users."
         ]
       },
       {
-        title: "Serverless Video Processing",
+        title: "Product & Market Research",
         details: [
-          "Architected and deployed serverless video processing pipelines on AWS.",
-          "Once a lesson concluded, the system automatically recorded, compressed, and transcoded child video files for review, storing them securely in S3 with custom encryption layers."
-        ]
-      },
-      {
-        title: "PMF & Investor Collaboration",
-        details: [
-          "Worked directly alongside early-stage investors and founders, analyzing usage metrics to optimize curriculum flows and successfully establish product-market fit."
+          "Worked closely with founding stakeholders to perform user analytics and product-market fit research.",
+          "Translated user feedback and engagement metrics into actionable software feature specifications."
         ]
       }
     ],
     caseStudyOutcomes: [
-      "Launched Pixical.com successfully, providing engaging video extracurricular lessons to children across the US.",
-      "Handled thousands of hours of live stream video classroom calls with sub-100ms latency.",
-      "Automated video review rendering pipelines, reducing server costs by over 40%."
+      "Delivered a low-latency real-time video learning platform.",
+      "Successfully refined product features based on direct user metrics and market fit research."
     ]
   },
   {
@@ -324,34 +303,35 @@ const experiences: Experience[] = [
     company: "Sterlite Technologies",
     role: "Data Science Intern",
     period: "May 2019 – Jul 2019",
-    location: "India (On-site)",
+    location: "India",
     asyncFriendly: false,
-    impactBadges: ["Data Classification", "Predictive Analytics", "Seaborn Visuals"],
+    impactBadges: ["Data Classification", "Predictive Analysis", "Pandas DataFrames"],
     achievements: [
-      "Performed data classification, prediction, and predictive visualization workflows utilizing Pandas, Matplotlib, and Seaborn to identify variables affecting durable optical fiber performance durability curves."
+      "<strong>Data Science</strong>: Ingested, cleaned, and processed datasets using Pandas, Matplotlib, and Seaborn to build data classification, predictive analysis, and visual reports."
     ],
-    skills: ["Python", "Pandas", "Matplotlib", "Seaborn", "Data Science"],
+    skills: ["Python", "Pandas", "Matplotlib", "Seaborn", "Data Analysis"],
     highlights: [
-      { icon: TrendingUp, text: "Visualized data pipelines and predictive classification loops" }
+      { icon: TrendingUp, text: "Optimized internal reporting with predictive scripts" }
     ],
     bannerGradient: "from-sky-600 to-blue-800 dark:from-sky-900/60 dark:to-blue-950/40",
-    caseStudyBackground: "I joined Sterlite Technologies as a Data Science Intern during a 2-month summer internship, focusing on analyzing, classifying, and predicting quality metrics for fiber-optic manufacturing pipelines.",
+    caseStudyBackground: "During my internship at Sterlite Technologies, I worked with the data team to build data pipelines, classification tools, and visualizations for internal quality reporting.",
     caseStudyPhases: [
       {
-        title: "Pandas Data Pipelines",
+        title: "Data Pipelines & Classification",
         details: [
-          "Ingested, cleaned, and processed large manufacturing and fiber quality datasets."
+          "Built python-based scripts using Pandas to clean and structure historical data.",
+          "Developed data classification and predictive analysis models to optimize quality assessments."
         ]
       },
       {
-        title: "Seaborn & Matplotlib Visualizations",
+        title: "Data Visualizations",
         details: [
-          "Programmed defect-mapping tools and correlation heatmaps to visualize variables impacting glass durability and signal attenuation."
+          "Created visual reporting templates using Matplotlib and Seaborn to display analysis results."
         ]
       }
     ],
     caseStudyOutcomes: [
-      "Enabled the manufacturing QA team to identify key physical variables affecting fiber durability, speeding up quality diagnostics."
+      "Delivered predictive analysis and visualization scripts that streamlined internal reporting."
     ]
   }
 ];
@@ -390,7 +370,7 @@ export default function Resume({ onContactClick }: { onContactClick: () => void 
               Experience
             </h2>
             <p className="mt-4 text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-xl">
-              5 years of building robust full-stack products, leading agentic AI systems, and deploying async-first structures. Click any card to read the long-form case study.
+              5 years of building robust full-stack products, leading technical pods, and deploying async-first structures. Click any card to read the long-form case study.
             </p>
           </div>
         </div>

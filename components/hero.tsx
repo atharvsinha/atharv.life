@@ -68,16 +68,16 @@ type Persona = {
 const personas: Persona[] = [
   {
     id: "developer",
-    name: "AI Engineer",
+    name: "Software Engineer",
     icon: Terminal,
-    title: "Product Engineer (Fullstack & AI)",
+    title: "Senior Full-Stack Software Engineer",
     tagline:
-      "Specializing in shipping robust products from 0 to 1. Combining SOTA agentic AI & automation systems with high-performance fullstack frameworks—spanning live video platforms, scalable calculation engines, and global B2B integrations.",
+      "Senior Full-Stack Software Engineer with 5+ years architecting and scaling production systems across insurtech, digital identity, and enterprise SaaS—TypeScript/React on the frontend, Node.js/Python/Go on the backend.",
     accentClass: "bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border-indigo-200/50 dark:border-indigo-900/60",
     glowColor: "rgba(99, 102, 241, 0.25)",
     stats: [
       { label: "Years Experience", value: "5+" },
-      { label: "UX Optimisation (Ernest)", value: "75%" },
+      { label: "UX Steps Saved", value: "75%" },
       { label: "B2B SaaS Integrations", value: "10+" },
     ],
   },
@@ -182,7 +182,7 @@ export default function Hero({ onContactClick }: { onContactClick: () => void })
             {/* Status / Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-zinc-200/80 dark:border-zinc-800/80 bg-white/50 dark:bg-zinc-900/50 backdrop-blur-sm text-xs font-mono text-zinc-600 dark:text-zinc-400 mb-6 shadow-xs">
               <Sparkles className="h-3.5 w-3.5 animate-pulse" style={{ color: getPersonaColor() }} />
-              <span className="font-semibold">{`ai · tech · music · travel · diving`}</span>
+              <span className="font-semibold">{`software · tech · music · travel · diving`}</span>
             </div>
 
             {/* Persona Switcher Menu */}

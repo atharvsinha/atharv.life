@@ -18,16 +18,11 @@ type SkillCategory = {
 };
 
 const docUrls: Record<string, string> = {
-  // AI
-  "Agentic AI": "https://www.ibm.com/think/topics/ai-agents",
-  "RAG": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
-  "LangGraph": "https://langchain-ai.github.io/langgraph/",
-  "MCP": "https://modelcontextprotocol.io/",
-  "Vercel AI SDK": "https://sdk.vercel.ai/docs",
+  // Systems & Reasoning
   "RLHF & SFT": "https://huggingface.co/blog/rlhf",
   "CoT / ReAct": "https://arxiv.org/abs/2210.03629",
   "LLM Fine-tuning": "https://huggingface.co/docs/transformers/training",
-  "Multi-Agent Systems": "https://en.wikipedia.org/wiki/Multi-agent_system",
+  "RL Gyms": "https://gymnasium.farama.org/",
 
   // Full-Stack
   "Next.js (App Router)": "https://nextjs.org/docs",
@@ -61,20 +56,15 @@ const docUrls: Record<string, string> = {
 const skillCategories: SkillCategory[] = [
   {
     id: "ai",
-    title: "AI & Intelligent Reasoning",
-    description: "Architecting agentic setups, SFT data generation, model evaluations, and cognitive reasoning layers.",
+    title: "Systems Engineering & Reasoning",
+    description: "Aligning models with RLHF & SFT, designing RL Gyms, and engineering structured reasoning pipelines.",
     icon: BrainCircuit,
     glowColor: "hover:shadow-[0_0_30px_-5px_rgba(99,102,241,0.3)] hover:border-indigo-500 dark:hover:border-indigo-400",
     skills: [
-      { name: "Agentic AI", context: "Designed hybrid RL Gym systems for ServiceNow agentic infra." },
-      { name: "RAG", context: "Optimized precise search queries with context compression." },
-      { name: "LangGraph", context: "Crafted complex multi-agent flows with cycle and state control." },
-      { name: "MCP", context: "Built local context integrations and custom tool connections." },
-      { name: "Vercel AI SDK", context: "Implemented streaming responses and structured JSON completions." },
-      { name: "RLHF & SFT", context: "Authored gold standard responses and directed 3-6 AI trainers at ServiceNow." },
-      { name: "CoT / ReAct", context: "Specialized ServiceNow cognitive LLM training to surpass Gemini 2.5 Flash." },
-      { name: "LLM Fine-tuning", context: "Tuned SFT datasets yielding SOTA-breaking multi-turn reasoning conversations." },
-      { name: "Multi-Agent Systems", context: "Orchestrated collaborative pods for complex task solving." },
+      { name: "RLHF & SFT", context: "Authored evaluation datasets and led alignment work for language models." },
+      { name: "CoT / ReAct", context: "Engineered structured reasoning pipelines benchmarked for production reliability." },
+      { name: "RL Gyms", context: "Built environment harnesses and enterprise sandboxes to train RL agents." },
+      { name: "LLM Fine-tuning", context: "Designed fine-tuning datasets to improve model instruction-following." },
     ],
   },
   {
