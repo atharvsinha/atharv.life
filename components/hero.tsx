@@ -68,7 +68,7 @@ type Persona = {
 const personas: Persona[] = [
   {
     id: "developer",
-    name: "Software Engineer",
+    name: "Software",
     icon: Terminal,
     title: "Senior Full-Stack Software Engineer",
     tagline:
@@ -83,7 +83,7 @@ const personas: Persona[] = [
   },
   {
     id: "musician",
-    name: "Indie Musician",
+    name: "Music",
     icon: Music,
     title: "Indie Musician",
     tagline:
@@ -98,7 +98,7 @@ const personas: Persona[] = [
   },
   {
     id: "diver",
-    name: "Scuba Diver",
+    name: "Diving",
     icon: Compass,
     title: "PADI Advanced Open Water Diver",
     tagline:
@@ -113,7 +113,7 @@ const personas: Persona[] = [
   },
   {
     id: "traveler",
-    name: "Traveller",
+    name: "Travel",
     icon: Globe,
     title: "Traveller",
     tagline:
@@ -206,8 +206,21 @@ export default function Hero({ onContactClick }: { onContactClick: () => void })
               })}
             </div>
 
-            {/* Main Headline Block */}
-            <div className="min-h-[200px] sm:min-h-[180px] lg:h-[220px] flex items-start justify-start w-full mb-6">
+            {/* Main Fixed Headline Block */}
+            <div className="flex flex-col items-start w-full text-left mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-zinc-900 dark:text-zinc-50 leading-[1.08]">
+                Atharv Sinha
+              </h1>
+              <h2 className="text-lg sm:text-xl font-mono font-bold mt-2.5 text-indigo-600 dark:text-indigo-400">
+                Senior Full-Stack Software Engineer
+              </h2>
+              <p className="text-xs font-mono font-semibold text-zinc-450 dark:text-zinc-500 mt-1.5 uppercase tracking-wider">
+                Indie Musician &bull; Scuba Diver &bull; Traveller
+              </p>
+            </div>
+
+            {/* Rotating Description/Tagline Block */}
+            <div className="min-h-[110px] sm:min-h-[90px] lg:h-[110px] flex items-start justify-start w-full mb-6">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activePersona.id}
@@ -217,16 +230,7 @@ export default function Hero({ onContactClick }: { onContactClick: () => void })
                   transition={{ duration: 0.35, ease: "easeOut" }}
                   className="flex flex-col items-start w-full text-left"
                 >
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-zinc-900 dark:text-zinc-50 leading-[1.08]">
-                    Atharv Sinha
-                  </h1>
-                  <h2
-                    className="text-lg sm:text-xl font-mono font-bold mt-2.5 transition-colors duration-500"
-                    style={{ color: getPersonaColor() }}
-                  >
-                    {activePersona.title}
-                  </h2>
-                  <p className="mt-4 text-sm sm:text-base leading-relaxed text-zinc-600 dark:text-zinc-300 font-normal max-w-xl">
+                  <p className="text-sm sm:text-base leading-relaxed text-zinc-650 dark:text-zinc-300 font-normal max-w-xl">
                     {activePersona.tagline}
                   </p>
                 </motion.div>
@@ -395,7 +399,6 @@ export default function Hero({ onContactClick }: { onContactClick: () => void })
               <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-zinc-950/60 dark:bg-black/40 backdrop-blur-md border border-white/10 text-white font-mono text-[10px] leading-tight flex items-center justify-between shadow-lg">
                 <div className="flex flex-col">
                   <span className="font-bold text-xs">Atharv Sinha</span>
-                  <span className="text-[9px] text-zinc-300 uppercase tracking-widest mt-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">Remote Nomad</span>
                 </div>
                 <span
                   className="h-2 w-2 rounded-full pulse-indicator"

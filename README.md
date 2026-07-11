@@ -2,7 +2,7 @@
 
 Live at: [atharv.life](https://atharv.life)
 
-Personal portfolio of Atharv Sinha — Full-Stack AI Engineer, Indie Musician, Scuba Diver, and Traveller.
+Personal portfolio of Atharv Sinha — Senior Full-Stack Software Engineer & Technical Pod Lead, Indie Musician, Scuba Diver, and Traveller.
 
 ## Stack
 
@@ -16,7 +16,7 @@ Personal portfolio of Atharv Sinha — Full-Stack AI Engineer, Indie Musician, S
 
 ## Features
 
-- Persona switcher (AI Engineer · Indie Musician · Scuba Diver · Traveller)
+- Persona switcher (Software Engineer · Indie Musician · Scuba Diver · Traveller)
 - Interactive resume & experience timeline
 - Embedded music player (Spotify · Apple Music · YouTube)
 - Photo gallery — travels & human side

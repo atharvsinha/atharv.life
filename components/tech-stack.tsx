@@ -19,10 +19,7 @@ type SkillCategory = {
 
 const docUrls: Record<string, string> = {
   // Systems & Reasoning
-  "RLHF & SFT": "https://huggingface.co/blog/rlhf",
   "CoT / ReAct": "https://arxiv.org/abs/2210.03629",
-  "LLM Fine-tuning": "https://huggingface.co/docs/transformers/training",
-  "RL Gyms": "https://gymnasium.farama.org/",
 
   // Full-Stack
   "Next.js (App Router)": "https://nextjs.org/docs",
@@ -54,19 +51,6 @@ const docUrls: Record<string, string> = {
 
 
 const skillCategories: SkillCategory[] = [
-  {
-    id: "ai",
-    title: "Systems Engineering & Reasoning",
-    description: "Aligning models with RLHF & SFT, designing RL Gyms, and engineering structured reasoning pipelines.",
-    icon: BrainCircuit,
-    glowColor: "hover:shadow-[0_0_30px_-5px_rgba(99,102,241,0.3)] hover:border-indigo-500 dark:hover:border-indigo-400",
-    skills: [
-      { name: "RLHF & SFT", context: "Authored evaluation datasets and led alignment work for language models." },
-      { name: "CoT / ReAct", context: "Engineered structured reasoning pipelines benchmarked for production reliability." },
-      { name: "RL Gyms", context: "Built environment harnesses and enterprise sandboxes to train RL agents." },
-      { name: "LLM Fine-tuning", context: "Designed fine-tuning datasets to improve model instruction-following." },
-    ],
-  },
   {
     id: "fullstack",
     title: "Full-Stack & Backend Systems",
@@ -114,7 +98,21 @@ const skillCategories: SkillCategory[] = [
       { name: "Technical Translation", context: "Translated banking requisites into actionable engineering specs." },
     ],
   },
-];export default function TechStack() {
+  {
+    id: "ai",
+    title: "Applied AI & Reasoning Pipelines",
+    description: "Integrating reasoning patterns and LLM capabilities into production engineering work.",
+    icon: BrainCircuit,
+    glowColor: "hover:shadow-[0_0_30px_-5px_rgba(99,102,241,0.3)] hover:border-indigo-500 dark:hover:border-indigo-400",
+    skills: [
+      { name: "CoT / ReAct", context: "Engineered structured reasoning pipelines benchmarked for production reliability." },
+      { name: "Applied AI / LLM Integration", context: "Built model alignment and evaluation frameworks alongside core engineering work." },
+      { name: "Agentic Workflows", context: "Designed sandbox environments to test and optimize agent-driven task execution." },
+    ],
+  },
+];
+
+export default function TechStack() {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
 
   return (
@@ -124,7 +122,7 @@ const skillCategories: SkillCategory[] = [
       <div className="absolute bottom-1/4 right-[5%] w-[450px] h-[450px] rounded-full bg-teal-500/10 dark:bg-teal-500/6 blur-[120px] pointer-events-none -z-10"></div>
 
       <div className="max-w-6xl mx-auto">
-        
+
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-xl">
@@ -138,7 +136,7 @@ const skillCategories: SkillCategory[] = [
               Skills
             </h2>
             <p className="mt-4 text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              An engineering stack calibrated for high uncertainty, complex cognitive reasoning, and robust distributed performance.
+              A full-stack toolkit for building and scaling production systems — frontend to cloud infrastructure, with applied AI integration where it solves a real problem.
             </p>
           </div>
         </div>
@@ -193,9 +191,8 @@ const skillCategories: SkillCategory[] = [
                           className={`text-xs px-3 py-1.5 rounded-lg border transition-all duration-350 flex items-center select-none cursor-pointer ${badgeClass}`}
                         >
                           <span>{skill.name}</span>
-                          <span className={`h-1.5 w-1.5 rounded-full bg-blue-500 dark:bg-blue-400 ml-1.5 transition-all duration-300 ease-out shadow-[0_0_8px_rgba(59,130,246,0.6)] ${
-                            isHovered ? "opacity-100 scale-100 animate-pulse" : "opacity-0 scale-50 pointer-events-none"
-                          }`}></span>
+                          <span className={`h-1.5 w-1.5 rounded-full bg-blue-500 dark:bg-blue-400 ml-1.5 transition-all duration-300 ease-out shadow-[0_0_8px_rgba(59,130,246,0.6)] ${isHovered ? "opacity-100 scale-100 animate-pulse" : "opacity-0 scale-50 pointer-events-none"
+                            }`}></span>
                         </a>
                       );
                     }
@@ -208,9 +205,8 @@ const skillCategories: SkillCategory[] = [
                         className={`text-xs px-3 py-1.5 rounded-lg border transition-all duration-350 flex items-center select-none cursor-default ${badgeClass}`}
                       >
                         <span>{skill.name}</span>
-                        <span className={`h-1.5 w-1.5 rounded-full bg-blue-500 dark:bg-blue-400 ml-1.5 transition-all duration-300 ease-out shadow-[0_0_8px_rgba(59,130,246,0.6)] ${
-                          isHovered ? "opacity-100 scale-100 animate-pulse" : "opacity-0 scale-50 pointer-events-none"
-                        }`}></span>
+                        <span className={`h-1.5 w-1.5 rounded-full bg-blue-500 dark:bg-blue-400 ml-1.5 transition-all duration-300 ease-out shadow-[0_0_8px_rgba(59,130,246,0.6)] ${isHovered ? "opacity-100 scale-100 animate-pulse" : "opacity-0 scale-50 pointer-events-none"
+                          }`}></span>
                       </span>
                     );
                   })}

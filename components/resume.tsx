@@ -54,19 +54,19 @@ const experiences: Experience[] = [
     period: "Oct 2024 – Jan 2026",
     location: "Remote, India",
     asyncFriendly: true,
-    impactBadges: ["99% Pod Accuracy", "RLHF & SFT", "RL Gyms"],
+    impactBadges: ["99% Pod Accuracy", "4-Engineer Pod Lead", "5 Time Zones"],
     achievements: [
       "<strong>Technical leadership</strong>: Promoted to Pod Lead within weeks of joining, leading a 4-engineer pod across 5 time zones and achieving a project-leading <strong>99% client-rated accuracy score</strong>.",
       "<strong>Systems engineering</strong>: Architected and shipped enterprise workflow systems in Python, engineering structured reasoning pipelines (<strong>Chain-of-Thought + ReAct</strong>) benchmarked against Gemini 2.5 Flash for production reliability.",
       "<strong>Quality standards</strong>: Authored evaluation frameworks and data-quality engineering standards adopted project-wide."
     ],
-    skills: ["RLHF & SFT", "CoT / ReAct", "RL Gyms", "Python", "Pandas", "System Design"],
+    skills: ["Python", "CoT / ReAct", "System Design", "Technical Leadership", "Distributed Systems", "Pandas"],
     highlights: [
       { icon: Users, text: "Led 4-engineer pod across 5 time zones asynchronously" },
       { icon: Award, text: "Engineered reasoning pipelines benchmarked against Gemini 2.5 Flash", badge: "CoT / ReAct" },
     ],
     bannerGradient: "from-indigo-600 to-blue-700 dark:from-indigo-950/60 dark:to-blue-950/40",
-    caseStudyBackground: "I joined ServiceNow via Turing to lead systems engineering, reinforcement learning (RLHF), supervised fine-tuning (SFT) pipelines, and RL Gym environments. As a Senior Software Engineer and Technical Pod Lead, I was responsible for coordinating a distributed team of engineers, compiling structured reasoning traces, and authoring rigorous quality evaluation standards for complex enterprise applications.",
+    caseStudyBackground: "I joined ServiceNow via Turing as a Senior Software Engineer and was promoted to Technical Pod Lead within weeks. I coordinated a distributed team of engineers, architected Python-based enterprise workflow systems with structured reasoning pipelines (Chain-of-Thought + ReAct), and authored the quality evaluation standards adopted project-wide — including supporting applied-AI workstreams like model alignment and reasoning-pipeline benchmarking.",
     caseStudyPhases: [
       {
         title: "Phase 1: Technical Leadership & Pod Management",
@@ -85,18 +85,10 @@ const experiences: Experience[] = [
         ]
       },
       {
-        title: "Phase 3: RLHF & SFT Alignment",
+        title: "Phase 3: Applied AI Workstreams",
         details: [
-          "Supervised alignment pipelines incorporating Reinforcement Learning from Human Feedback (RLHF) and Supervised Fine-Tuning (SFT).",
-          "Designed structured dataset specifications and evaluation frameworks to fine-tune and align models on reasoning and instruction-following tasks.",
-          "Validated model responses for syntax correctness, runtime viability, and edge-case safety."
-        ]
-      },
-      {
-        title: "Phase 4: RL Gym Environments",
-        details: [
-          "Designed reinforcement learning (RL) Gym environments and simulated sandboxes for model training.",
-          "Created custom mock execution environments to test and optimize agent actions, reward metrics, and automated feedback loops."
+          "Supported model alignment work (RLHF, SFT) and built RL Gym sandbox environments to test agentic workflows alongside the core engineering roadmap.",
+          "Designed dataset specifications and evaluation frameworks used to fine-tune and align models on reasoning and instruction-following tasks."
         ]
       }
     ],
@@ -558,7 +550,7 @@ export default function Resume({ onContactClick }: { onContactClick: () => void 
 
               {/* Scrollable Case Study Body Container */}
               <div className="p-6 md:p-8 overflow-y-auto flex-1 space-y-6 scrollbar-thin">
-                
+
                 {/* Meta details & Stats badges block */}
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-2xl border border-zinc-150 dark:border-zinc-900 bg-zinc-50/50 dark:bg-zinc-950/20">
                   <div className="flex flex-col gap-1.5 text-xs text-zinc-500 dark:text-zinc-400 font-mono">

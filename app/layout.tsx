@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Atharv Sinha | Senior Full-Stack Software Engineer & Technical Pod Lead",
-  description: "Portfolio of Atharv Sinha: Senior Full-Stack Software Engineer & Technical Pod Lead specializing in scaling production systems, full-stack frameworks, and reasoning pipelines. Discover tech stack matrix, interactive resume, indie music releases, and scuba adventures.",
+  description: "Portfolio of Atharv Sinha: Senior Full-Stack Software Engineer & Technical Pod Lead specializing in full-stack web applications, scalable cloud infrastructure, and robust backend workflows. Discover tech stack matrix, interactive resume, indie music releases, and scuba adventures.",
   keywords: ["Atharv Sinha", "Senior Software Engineer", "Full-Stack Developer", "Pod Lead", "TypeScript", "React", "Node.js", "Go", "Python", "Next.js", "Indie Musician", "Scuba Diving"],
   authors: [{ name: "Atharv Sinha", url: "https://atharv.life" }],
 };
