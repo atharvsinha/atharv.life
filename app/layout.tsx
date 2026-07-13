@@ -13,10 +13,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://atharv.life"),
   title: "Atharv Sinha | Senior Full-Stack Software Engineer & Technical Pod Lead",
   description: "Portfolio of Atharv Sinha: Senior Full-Stack Software Engineer & Technical Pod Lead specializing in full-stack web applications, scalable cloud infrastructure, and robust backend workflows. Discover tech stack matrix, interactive resume, indie music releases, and scuba adventures.",
   keywords: ["Atharv Sinha", "Senior Software Engineer", "Full-Stack Developer", "Pod Lead", "TypeScript", "React", "Node.js", "Go", "Python", "Next.js", "Indie Musician", "Scuba Diving"],
   authors: [{ name: "Atharv Sinha", url: "https://atharv.life" }],
+  openGraph: {
+    title: "Atharv Sinha | Senior Full-Stack Software Engineer & Technical Pod Lead",
+    description: "Portfolio of Atharv Sinha: Senior Full-Stack Software Engineer & Technical Pod Lead specializing in full-stack web applications, scalable cloud infrastructure, and robust backend workflows. Discover tech stack matrix, interactive resume, indie music releases, and scuba adventures.",
+    url: "https://atharv.life",
+    siteName: "Atharv Sinha Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Atharv Sinha | Senior Full-Stack Software Engineer & Technical Pod Lead",
+    description: "Portfolio of Atharv Sinha: Senior Full-Stack Software Engineer & Technical Pod Lead specializing in full-stack web applications, scalable cloud infrastructure, and robust backend workflows.",
+  },
 };
 
 export default function RootLayout({
